@@ -552,6 +552,7 @@ body{padding-bottom:76px}
 .rnotes p{font-size:15px;color:var(--ink2);max-width:80ch}
 .navjobs{display:inline-flex;align-items:center;gap:7px;color:#fff!important;font-weight:700}
 .navjobs em{font-style:normal;font-size:11.5px;font-weight:700;background:var(--yellow);color:#0E0E0C;border-radius:999px;padding:3px 8px;line-height:1}
+.savetag{font-style:normal;font-weight:700;font-size:12.5px;color:#0B5A3A;background:#E3F1E9;padding:3px 8px;border-radius:999px;display:inline-block;margin-top:4px}
 </style>
 <script>
 /* ---- Ads tracking. Paste IDs to switch on; empty = nothing loads. ---- */
@@ -598,11 +599,11 @@ window.ACC_GA4_ID = '';          // GA4 > Admin > Data streams > Measurement ID 
   <div class="wrap nav">
     <a href="#top" class="logo xlr" data-xlr="X1" aria-label="LevelUp home">LevelUp</a>
     <nav class="links" aria-label="Main"><a href="#tracks">Tracks</a><a href="#syllabus">Syllabus</a><a href="#dates">Dates</a><a href="#pricing">Pricing</a><a href="#founding">Founding cohort</a><a href="#faq">FAQ</a><a href="cyber/">Cyber</a><a href="jobs/" class="navjobs">Jobs <em>~$100/hr</em></a><a href="blog/">Blog</a></nav>
-    <div class="nav-r"><button type="button" class="btn btn-y hide-m" data-reserve>Reserve your seat</button>
+    <div class="nav-r"><button type="button" class="btn btn-y hide-m" data-reserve>Enrol now</button>
     <button class="menu-btn" aria-label="Menu" aria-expanded="false"><span></span></button></div>
   </div>
 </header>
-<div class="drawer" id="drawer"><a href="#tracks">Tracks</a><a href="#syllabus">Syllabus</a><a href="#dates">Dates</a><a href="#pricing">Pricing</a><a href="#short">Short courses</a><a href="cyber/">Cyber</a><a href="jobs/">Jobs</a><a href="#founding">Founding cohort</a><a href="#faq">FAQ</a><a href="blog/">Blog</a><a href="#" class="btn btn-y" data-reserve>Reserve your seat</a></div>
+<div class="drawer" id="drawer"><a href="#tracks">Tracks</a><a href="#syllabus">Syllabus</a><a href="#dates">Dates</a><a href="#pricing">Pricing</a><a href="#short">Short courses</a><a href="cyber/">Cyber</a><a href="jobs/">Jobs</a><a href="#founding">Founding cohort</a><a href="#faq">FAQ</a><a href="blog/">Blog</a><a href="#" class="btn btn-y" data-reserve>Enrol now</a></div>
 
 <main>
 <section class="hx">
@@ -613,7 +614,7 @@ window.ACC_GA4_ID = '';          // GA4 > Admin > Data streams > Measurement ID 
       <p class="lead">Not another "intro to AI" deck. Two live tracks, one outcome each. <b>Automation:</b> ship one real AI automation in your job in four weeks, or your money back. <b>Entrepreneurs:</b> build a fixed-price AI service and send your first outreach.</p>
       <p class="hrs">January 2027 cohorts · early bird US$897 until Sun 29 Nov · about 3 hrs a week live</p>
       <div class="cta-row">
-        <button type="button" class="btn btn-y" data-reserve>Reserve your seat <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        <button type="button" class="btn btn-y" data-reserve>Enrol now <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
         <a href="#trial" class="btn btn-o">Join the free live workshop</a>
       </div>
       <div class="chips">
@@ -679,7 +680,7 @@ window.ACC_GA4_ID = '';          // GA4 > Admin > Data streams > Measurement ID 
     <div class="mega" style="margin-top:32px">
       <a class="tile big rv" href="#syllabus"><span class="ic">🚀</span><h3>AI for Entrepreneurs</h3><p>Go from idea to a working, AI-powered offer in 8 live sessions: fixed scope, fixed price, AI doing the delivery.</p><div class="toolrow"><span>Claude</span><span>ChatGPT</span><span>no-code builders</span></div><p style="margin-top:8px;font-size:13.5px;color:#D6D3CA">About 3 hrs live a week + 2 hrs building your offer</p></a>
       <a class="tile y rv" href="#syllabus" id="automation"><span class="ic">⚙️</span><h3>AI for Automation</h3><p>Kill the busywork in your actual job, step by step.</p><div class="toolrow"><span>n8n</span><span>Zapier</span><span>Make</span><span>Claude Cowork</span></div><p style="margin-top:8px;font-size:13.5px;color:#5C4A0B">About 3 hrs live a week + 1 hr building inside your job</p></a>
-      <a class="tile rv" href="#short"><span class="ic">⚡</span><h3>Short courses</h3><p>AI Short Course from US$750, AI Mini from US$99. Local currencies at checkout.</p></a>
+      <a class="tile rv" href="#short"><span class="ic">⚡</span><h3>Short courses</h3><p>Next cohort starts 1 Dec. AI Short Course <s>US$1,500</s> US$1,000, AI Mini <s>US$150</s> US$99.</p></a>
       <a class="tile rv" href="#trial"><span class="ic">🎟️</span><h3>Free live workshop</h3><p>Watch a real build, live, before you pay a thing.</p></a>
       <a class="tile rv" href="#enterprise"><span class="ic">🏢</span><h3>Private cohorts</h3><p>Run either track just for your team.</p></a>
       <a class="tile rv" href="#instructors"><span class="ic">🤝</span><h3>Practitioner-led</h3><p>Instructors who have built and shipped with AI, including today's agent tooling.</p></a>
@@ -709,17 +710,17 @@ window.ACC_GA4_ID = '';          // GA4 > Admin > Data streams > Measurement ID 
     <p class="eyebrow rv">Three programs</p>
     <h2 class="rv">one curriculum, run live in three regions.</h2>
     <div class="show" data-tabs><div class="tabs" role="tablist"><button type="button" data-tab="hk" class="on">🇭🇰 Hong Kong</button><button type="button" data-tab="us">🇺🇸 United States</button><button type="button" data-tab="sea">🌏 Southeast Asia</button></div>
-      <div class="pane on" data-pane="hk"><div><h3>the only in-person room.</h3><p lang="zh-Hant" style="font-weight:600;color:var(--ink2);margin:6px 0 4px">逢星期六上午 · 中環現場上課 · 非政府資助課程</p><p class="lead">Saturday mornings in person in Central, Hong Kong. The rest of the week runs remote alongside everyone else.</p><span class="notsub">Paid, founder-led, run independently. <b>Not</b> a government-subsidised programme.</span><ul class="list" style="margin-top:18px"><li>Starts Sat 9 Jan 2027</li><li>Sat 9:30 to 12:30 in person, HKT</li><li>Tue evening remote + Thu optional AMA</li></ul><button type="button" class="btn btn-y" data-reserve data-region="Hong Kong (in person)">Reserve: Hong Kong cohort</button></div>
+      <div class="pane on" data-pane="hk"><div><h3>the only in-person room.</h3><p lang="zh-Hant" style="font-weight:600;color:var(--ink2);margin:6px 0 4px">逢星期六上午 · 中環現場上課 · 非政府資助課程</p><p class="lead">Saturday mornings in person in Central, Hong Kong. The rest of the week runs remote alongside everyone else.</p><span class="notsub">Paid, founder-led, run independently. <b>Not</b> a government-subsidised programme.</span><ul class="list" style="margin-top:18px"><li>Starts Sat 9 Jan 2027</li><li>Sat 9:30 to 12:30 in person, HKT</li><li>Tue evening remote + Thu optional AMA</li></ul><button type="button" class="btn btn-y" data-reserve data-region="Hong Kong (in person)">Enrol: Hong Kong cohort</button></div>
       <div class="stage"><div class="ph"><div class="sc"><div class="bar"><span>LevelUp · HK</span><span>9:41</span></div><div class="hi">This week</div>
       <div class="bal"><small>Sat</small><div class="n" style="font-size:22px">9:30 AM HKT</div><small>In person · Central</small></div>
       <div class="tx"><div><span><i>📅</i><span>Tue<small>Evening · remote</small></span></span><b>Remote</b></div><div><span><i>📅</i><span>Thu<small>Office hours · optional</small></span></span><b>Remote</b></div></div>
       <div class="tap" style="justify-content:center;text-align:center;font-size:13.5px">📍 Central, Hong Kong<br>(venue confirmed on enrolment)</div></div></div></div></div>
-      <div class="pane" data-pane="us"><div><h3>fully remote, after work.</h3><p class="lead">Tuesday evenings and Saturday mornings, built around a real workweek.</p><ul class="list"><li>Starts Tue 12 Jan 2027</li><li>Tue 7:00 PM + Sat 9:30 to 12:30 ET</li><li>Thu optional office hours / AMA</li></ul><button type="button" class="btn btn-y" data-reserve data-region="United States (remote)">Reserve: US cohort</button></div>
+      <div class="pane" data-pane="us"><div><h3>fully remote, after work.</h3><p class="lead">Tuesday evenings and Saturday mornings, built around a real workweek.</p><ul class="list"><li>Starts Tue 12 Jan 2027</li><li>Tue 7:00 PM + Sat 9:30 to 12:30 ET</li><li>Thu optional office hours / AMA</li></ul><button type="button" class="btn btn-y" data-reserve data-region="United States (remote)">Enrol: US cohort</button></div>
       <div class="stage"><div class="ph"><div class="sc"><div class="bar"><span>LevelUp · US</span><span>9:41</span></div><div class="hi">This week</div>
       <div class="bal"><small>Tue</small><div class="n" style="font-size:22px">7:00 PM ET</div><small>Live session · remote</small></div>
       <div class="tx"><div><span><i>📅</i><span>Thu<small>Office hours · optional</small></span></span><b>Remote</b></div><div><span><i>📅</i><span>Sat<small>9:30 to 12:30 ET</small></span></span><b>Remote</b></div></div>
       <div class="tap" style="justify-content:center">Join Tuesday's session</div></div></div></div></div>
-      <div class="pane" data-pane="sea"><div><h3>fully remote, SGT evenings.</h3><p class="lead">Same curriculum, same instructors, timed for Singapore and the wider region.</p><ul class="list"><li>Starts Tue 12 Jan 2027</li><li>Tue 7:00 PM + Sat 9:30 to 12:30 SGT</li><li>Thu optional office hours / AMA</li></ul><button type="button" class="btn btn-y" data-reserve data-region="Southeast Asia (remote)">Reserve: SEA cohort</button></div>
+      <div class="pane" data-pane="sea"><div><h3>fully remote, SGT evenings.</h3><p class="lead">Same curriculum, same instructors, timed for Singapore and the wider region.</p><ul class="list"><li>Starts Tue 12 Jan 2027</li><li>Tue 7:00 PM + Sat 9:30 to 12:30 SGT</li><li>Thu optional office hours / AMA</li></ul><button type="button" class="btn btn-y" data-reserve data-region="Southeast Asia (remote)">Enrol: SEA cohort</button></div>
       <div class="stage"><div class="ph"><div class="sc"><div class="bar"><span>LevelUp · SEA</span><span>9:41</span></div><div class="hi">This week</div>
       <div class="bal"><small>Tue</small><div class="n" style="font-size:22px">7:00 PM SGT</div><small>Live session · remote</small></div>
       <div class="tx"><div><span><i>📅</i><span>Thu<small>Office hours · optional</small></span></span><b>Remote</b></div><div><span><i>📅</i><span>Sat<small>9:30 to 12:30 SGT</small></span></span><b>Remote</b></div></div>
@@ -836,10 +837,10 @@ window.ACC_GA4_ID = '';          // GA4 > Admin > Data streams > Measurement ID 
     <h2 class="rv">January 2027 dates.</h2>
     <p class="lead rv" style="margin-top:14px">24 seats per track, per region. When a cohort fills, you're offered the next one.</p>
     <div class="cohorts">
-      <div class="cc rv"><span class="rg">🇭🇰 Hong Kong · in person</span><span class="dt">Sat 9 Jan 2027</span><span class="meta">to Tue 2 Feb · Sat mornings in Central + Tue evenings online</span><span class="seats">Both flagship tracks</span><span class="meta">From <b data-price="early">HK$6,999</b></span><button type="button" class="btn btn-k" data-reserve data-region="Hong Kong (in person)">Reserve your seat</button></div>
-      <div class="cc rv"><span class="rg">🇺🇸 United States · online</span><span class="dt">Tue 12 Jan 2027</span><span class="meta">to Sat 6 Feb · Tue 7pm + Sat mornings ET</span><span class="seats">Both flagship tracks</span><span class="meta">From <b data-price="early">US$897</b></span><button type="button" class="btn btn-k" data-reserve data-region="United States (remote)">Reserve your seat</button></div>
-      <div class="cc rv"><span class="rg">🌏 Southeast Asia · online</span><span class="dt">Tue 12 Jan 2027</span><span class="meta">to Sat 6 Feb · Tue 7pm + Sat mornings SGT</span><span class="seats">Both flagship tracks</span><span class="meta">From <b data-price="early">US$897</b></span><button type="button" class="btn btn-k" data-reserve data-region="Southeast Asia (remote)">Reserve your seat</button></div>
-      <div class="cc sc rv"><span class="rg">🇭🇰 Short course · Central</span><span class="dt">Wed 13 Jan 2027</span><span class="meta">4 Wednesday evenings, 7:00 to 9:30pm, to Wed 3 Feb</span><span class="seats">AI at Work</span><span class="meta"><b>US$750 · HK$5,880</b></span><button type="button" class="btn btn-y" data-reserve data-track="ai_short">Reserve your seat</button></div>
+      <div class="cc rv"><span class="rg">🇭🇰 Hong Kong · in person</span><span class="dt">Sat 9 Jan 2027</span><span class="meta">to Tue 2 Feb · Sat mornings in Central + Tue evenings online</span><span class="seats">Both flagship tracks</span><span class="meta">From <b data-price="early">HK$6,999</b></span><button type="button" class="btn btn-k" data-reserve data-region="Hong Kong (in person)">Enrol now</button></div>
+      <div class="cc rv"><span class="rg">🇺🇸 United States · online</span><span class="dt">Tue 12 Jan 2027</span><span class="meta">to Sat 6 Feb · Tue 7pm + Sat mornings ET</span><span class="seats">Both flagship tracks</span><span class="meta">From <b data-price="early">US$897</b></span><button type="button" class="btn btn-k" data-reserve data-region="United States (remote)">Enrol now</button></div>
+      <div class="cc rv"><span class="rg">🌏 Southeast Asia · online</span><span class="dt">Tue 12 Jan 2027</span><span class="meta">to Sat 6 Feb · Tue 7pm + Sat mornings SGT</span><span class="seats">Both flagship tracks</span><span class="meta">From <b data-price="early">US$897</b></span><button type="button" class="btn btn-k" data-reserve data-region="Southeast Asia (remote)">Enrol now</button></div>
+      <div class="cc sc rv"><span class="rg">🇭🇰 Short course · Central</span><span class="dt">Wed 13 Jan 2027</span><span class="meta">4 Wednesday evenings, 7:00 to 9:30pm, to Wed 3 Feb</span><span class="seats">AI at Work</span><span class="meta"><s>US$1,500</s> <b>US$1,000 early bird</b></span><button type="button" class="btn btn-y" data-reserve data-track="ai_short">Enrol now</button></div>
     </div>
   </div>
 </section>
@@ -866,7 +867,7 @@ window.ACC_GA4_ID = '';          // GA4 > Admin > Data streams > Measurement ID 
       <div class="quiz-result" id="quizResult">
         <p class="qtitle" id="quizAnswer">.</p>
         <p class="lead" id="quizSub" style="margin:10px 0 20px"></p>
-        <button type="button" class="btn btn-k" id="quizCta">Reserve a seat on this track</button>
+        <button type="button" class="btn btn-k" id="quizCta">Enrol in this track</button>
       </div>
     </div>
   </div>
@@ -896,7 +897,7 @@ window.ACC_GA4_ID = '';          // GA4 > Admin > Data streams > Measurement ID 
           <li>Free repeat seat in a future cohort</li>
         </ul>
         <div class="guarantee"><span>🎯</span><div><b>Automation track guarantee:</b> ship one real automation live in your job by session 8, or your money back.</div></div>
-        <button type="button" class="btn btn-k" data-reserve data-tier="early">Reserve your seat</button>
+        <button type="button" class="btn btn-k" data-reserve data-tier="early">Enrol now</button>
       </div>
       <div class="pc rv">
         <span class="tag" style="background:var(--band)">Standard, after early bird closes</span>
@@ -924,7 +925,7 @@ window.ACC_GA4_ID = '';          // GA4 > Admin > Data streams > Measurement ID 
       <div class="pc on rv">
         <span class="label-s">SHORT COURSE · 4 EVENINGS · IN PERSON</span>
         <h3 style="font-size:28px">AI at Work</h3>
-        <div class="pr">US$750 <small>/ person · HK$5,880</small></div>
+        <div class="pr"><s style="font-size:.55em;color:var(--muted);font-weight:600">US$1,500</s> US$1,000 <small>/ person · early bird</small></div>
         <p style="color:var(--muted);font-size:14.5px;margin-top:-6px">4 sessions × 2.5 hours · Wed 13, 20, 27 Jan and 3 Feb 2027, 7:00 to 9:30pm · Central, Hong Kong (venue confirmed on enrolment)</p>
         <ul>
           <li>Session 1: prompting that actually works for your role</li>
@@ -934,7 +935,7 @@ window.ACC_GA4_ID = '';          // GA4 > Admin > Data streams > Measurement ID 
           <li>Certificate of completion</li>
           <li>Fee credited if you upgrade to a flagship track within 60 days</li>
         </ul>
-        <button type="button" class="btn btn-k" data-reserve data-track="ai_short">Reserve your seat</button>
+        <button type="button" class="btn btn-k" data-reserve data-track="ai_short">Enrol now</button>
       </div>
       <div class="rv" style="display:flex;flex-direction:column;gap:14px">
         <div class="guarantee" style="background:#fff;margin:0"><span>🏢</span><div><b>Bring your team.</b> Run AI at Work privately for 8 or more colleagues, at your office. <a href="#enterprise">Ask about team rates</a>.</div></div>
@@ -1062,7 +1063,7 @@ Thanks,
       <details class="q rv"><summary>Can I pay in instalments?</summary><p>Yes. Choose three monthly payments, or a US$97 deposit that holds the early-bird price with the balance due before the cohort starts. Pay in full is the default.</p></details>
       <details class="q rv"><summary>Do I need paid tools?</summary><p>You can do most of the course on free tiers. Some builds go further with a paid Claude or ChatGPT plan (about US$20 a month) or a paid automation plan. We tell you before each session what you need, and never require a tool we earn commission on.</p></details>
       <details class="q rv"><summary>There are free AI courses online. Why pay for this?</summary><p>Free courses teach you what the tools do. Most people never finish them and never ship anything. Here you build one real thing for your own job or business, live, with an instructor and a small group checking your work every week.</p></details>
-      <details class="q rv"><summary>Can I pay by FPS, PayMe or bank transfer?</summary><p>Yes. Choose "Reserve now, pay later" at checkout and we send you FPS or bank transfer details for Hong Kong, or a secure card link anywhere else. Your seat is held for 7 days while you pay.</p></details>
+      <details class="q rv"><summary>Can I pay by FPS, PayMe or bank transfer?</summary><p>Yes. Choose "Prefer bank transfer or FPS? Send me a payment link" at checkout and we send you FPS or bank transfer details for Hong Kong, or a secure card link anywhere else. Your seat is held for 7 days while you pay.</p></details>
       <details class="q rv"><summary>Can my employer pay?</summary><p>Yes. Use the email template above, and we can issue an invoice addressed to your company.</p></details>
       <details class="q rv"><summary>Which currency will I pay in?</summary><p>You choose. We accept USD, HKD, SGD, AED, GBP, CAD and PHP. The short course is priced in HKD. Payment is handled securely by Stripe.</p></details>
       <details class="q rv"><summary>Is this subsidised or free through a government programme?</summary><p>No. LevelUp is paid, independently run and founder-led. That is how we keep cohorts small and live.</p></details>
@@ -1165,36 +1166,36 @@ Thanks,
   </div>
 </footer>
 
-<div class="sbar" id="sbar" role="region" aria-label="Enrol"><div class="wrap"><div class="t"><b>Early bird ends Sun 29 Nov</b><span>From <span data-price="early">US$897</span> <span class="hm">· HK, US, SEA · 24 seats each</span></span></div><button type="button" class="btn btn-y" data-reserve>Reserve your seat</button></div></div>
+<div class="sbar" id="sbar" role="region" aria-label="Enrol"><div class="wrap"><div class="t"><b>Early bird ends Sun 29 Nov</b><span>From <span data-price="early">US$897</span> <span class="hm">· HK, US, SEA · 24 seats each</span></span></div><button type="button" class="btn btn-y" data-reserve>Enrol now</button></div></div>
 <a href="#" class="wa-fab" data-wa="general" aria-label="Chat with us on WhatsApp"><svg viewBox="0 0 24 24" fill="#fff"><use href="#wa-ico"/></svg></a>
 
 <!-- checkout modal -->
 <div class="mo" id="mo" role="dialog" aria-modal="true" aria-labelledby="moTitle">
   <div class="box">
     <button type="button" class="x" data-close aria-label="Close">✕</button>
-    <h3 id="moTitle">Reserve your seat</h3>
-    <p style="color:var(--muted);font-size:14.5px;margin:6px 0 16px">January 2027 cohort. Full refund up to the halfway point.</p>
+    <h3 id="moTitle">Enrol now</h3>
+    <p style="color:var(--muted);font-size:14.5px;margin:6px 0 16px">Next cohort starts Tuesday 1 December. Early-bird pricing ends when seats fill. Full refund up to the halfway point.</p>
     <form id="coForm" novalidate>
       <label class="fld"><span>Full name</span><input name="name" id="coName" autocomplete="name" required></label>
       <label class="fld"><span>Email</span><input name="email" id="coEmail" type="email" autocomplete="email" required></label>
       <label class="fld"><span>Course</span><select id="coTrack">
         <option value="entrepreneurs">AI for Entrepreneurs (8 live sessions)</option>
         <option value="automation">AI for Automation (8 live sessions)</option>
-        <option value="ai_short">AI Short Course (from US$750)</option>
-        <option value="ai_mini">AI Mini (from US$99)</option>
-        <option value="cyber_short">Cyber Short Course (from US$750)</option>
-        <option value="cyber_mini">Cyber Mini (from US$99)</option>
+        <option value="ai_short">AI Short Course · starts 1 Dec</option>
+        <option value="ai_mini">AI Mini · one live session</option>
+        <option value="cyber_short">Cyber Short Course · starts 1 Dec</option>
+        <option value="cyber_mini">Cyber Mini · one live session</option>
       </select></label>
       <div class="two">
         <label class="fld"><span>Region</span><select id="coRegion"><option>Hong Kong (in person)</option><option>United States (remote)</option><option>Southeast Asia (remote)</option></select></label>
         <label class="fld"><span>Currency</span><select id="coCcy"><option>USD</option><option>HKD</option><option>SGD</option><option>AED</option><option>GBP</option><option>CAD</option><option>PHP</option></select></label>
       </div>
       <label class="fld" id="coPlanWrap"><span>How would you like to pay?</span><select id="coPlan"><option value="full">Pay in full</option><option value="plan">3 monthly payments</option><option value="deposit">Deposit now, balance before the cohort</option></select></label>
-      <div class="amt"><span><small id="coLabel">Early-bird price</small><b id="coAmt">US$897</b></span><span style="font-size:13px;color:var(--muted);text-align:right" id="coWas">Standard US$1,200</span></div>
+      <div class="amt"><span><small id="coLabel">Early-bird price</small><b id="coAmt">US$897</b></span><span style="font-size:13px;color:var(--muted);text-align:right" id="coWas"><s>US$1,200</s><br><em class="savetag">Early bird · save 25%</em></span></div>
       <label class="consent"><input type="checkbox" id="coOk"><span>I agree to the <a href="terms/" target="_blank">terms</a>, <a href="refund/" target="_blank">refund policy</a> and <a href="privacy/" target="_blank">privacy notice</a>.</span></label>
       <p class="err" id="coErr">Please add your name, a valid email and tick the box.</p>
-      <button type="button" class="btn btn-k" id="coPay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 018 0v3"/></svg>Pay securely</button>
-      <button type="button" class="btn btn-o" id="coLater">Reserve now, pay later via secure link</button>
+      <button type="button" class="btn btn-k" id="coPay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 018 0v3"/></svg>Enrol and pay securely</button>
+      <button type="button" class="btn btn-o" id="coLater" style="font-size:14px">Prefer bank transfer or FPS? Send me a payment link</button>
       <p class="sec">Card payments processed by Stripe. We never see your card details.</p>
       <p class="done" id="coDone"></p>
     </form>
@@ -1238,7 +1239,7 @@ document.documentElement.classList.add('js');
   var WA_MSG = {
     general: "Hi Aka! I have a question about LevelUp's January 2027 AI cohort.",
     trial: "Hi Aka! I'd like a seat at the free LevelUp live workshop. My name is ",
-    short: "Hi Aka! I'm interested in LevelUp's AI Short Course (US$750)."
+    short: "Hi Aka! I'm interested in LevelUp's AI Short Course starting 1 December."
   };
   $$('[data-wa]').forEach(function(a){
     a.href = 'https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(WA_MSG[a.dataset.wa] || WA_MSG.general);
@@ -1332,13 +1333,13 @@ document.documentElement.classList.add('js');
     "PHP": "https://buy.stripe.com/9B6aEX3wkaZp6Rb3zOc7u14"
   },
   "ai_short": {
-    "USD": "https://buy.stripe.com/bJeaEX9UI4B10sN3zOc7u15",
-    "HKD": "https://buy.stripe.com/bJe3cveaY0kL0sNfiwc7u16",
-    "SGD": "https://buy.stripe.com/8x200jff25F54J35HWc7u17",
-    "AED": "https://buy.stripe.com/dRm9AT6IwaZpcbv1rGc7u18",
-    "GBP": "https://buy.stripe.com/aFabJ10k83wX2AV3zOc7u19",
-    "CAD": "https://buy.stripe.com/eVq8wP4Aod7x7Vf4DSc7u1a",
-    "PHP": "https://buy.stripe.com/bJe28r6Iw3wXb7rdaoc7u1b"
+    "USD": "https://buy.stripe.com/cNi28r3wk8Rh2AVdaoc7u1q",
+    "HKD": "https://buy.stripe.com/fZu8wP9UI3wX0sNfiwc7u1r",
+    "SGD": "https://buy.stripe.com/4gMbJ12sg7Ndcbvfiwc7u1s",
+    "AED": "https://buy.stripe.com/7sY6oHeaYc3tgrL9Ycc7u1t",
+    "GBP": "https://buy.stripe.com/dRm14n1oc6J91wR6M0c7u1u",
+    "CAD": "https://buy.stripe.com/eVq8wP6Iw6J94J31rGc7u1v",
+    "PHP": "https://buy.stripe.com/8x2dR92sgebBb7r1rGc7u1w"
   },
   "cyber_mini": {
     "USD": "https://buy.stripe.com/dRm4gzc2Q1oPa3n2vKc7u1c",
@@ -1350,18 +1351,20 @@ document.documentElement.classList.add('js');
     "PHP": "https://buy.stripe.com/3cI00j6IwebB3EZ5HWc7u1i"
   },
   "cyber_short": {
-    "USD": "https://buy.stripe.com/28E6oH0k85F53EZ8U8c7u1j",
-    "HKD": "https://buy.stripe.com/3cI4gz1oc5F55N7eesc7u1k",
-    "SGD": "https://buy.stripe.com/aFafZhd6U0kLfnHgmAc7u1l",
-    "AED": "https://buy.stripe.com/cNidR95Es2sT0sNgmAc7u1m",
-    "GBP": "https://buy.stripe.com/9B65kD6Iwd7x1wRdaoc7u1n",
-    "CAD": "https://buy.stripe.com/6oU4gz0k83wXb7reesc7u1o",
-    "PHP": "https://buy.stripe.com/6oU4gzgj62sTa3ndaoc7u1p"
+    "USD": "https://buy.stripe.com/7sYfZh8QEebB1wR8U8c7u1x",
+    "HKD": "https://buy.stripe.com/9B6eVd7MAaZp1wR0nCc7u1y",
+    "SGD": "https://buy.stripe.com/7sY5kD6Iwd7x6Rb7Q4c7u1z",
+    "AED": "https://buy.stripe.com/3cIeVdd6UgjJa3nc6kc7u1A",
+    "GBP": "https://buy.stripe.com/28E14n0k8aZp5N74DSc7u1B",
+    "CAD": "https://buy.stripe.com/bJeeVd8QE2sTejDgmAc7u1C",
+    "PHP": "https://buy.stripe.com/3cI3cv4Ao6J9b7r6M0c7u1D"
   }
 };
   STRIPE_LINKS.short = STRIPE_LINKS.ai_short;
   var TRACK_NAME = { entrepreneurs:'AI for Entrepreneurs', automation:'AI for Automation', short:'AI Short Course', ai_short:'AI Short Course', ai_mini:'AI Mini', cyber_short:'Cyber Short Course', cyber_mini:'Cyber Mini' };
-  var FIXED = { ai_mini:{USD:99,HKD:799,SGD:129,AED:369,GBP:79,CAD:139,PHP:5799}, cyber_mini:{USD:99,HKD:799,SGD:129,AED:369,GBP:79,CAD:139,PHP:5799}, ai_short:{USD:750,HKD:5880,SGD:999,AED:2750,GBP:599,CAD:1049,PHP:43999}, cyber_short:{USD:750,HKD:5880,SGD:999,AED:2750,GBP:599,CAD:1049,PHP:43999} };
+  var FIXED = { ai_mini:{USD:99,HKD:799,SGD:129,AED:369,GBP:79,CAD:139,PHP:5799}, cyber_mini:{USD:99,HKD:799,SGD:129,AED:369,GBP:79,CAD:139,PHP:5799}, ai_short:{USD:1000,HKD:7800,SGD:1349,AED:3690,GBP:799,CAD:1399,PHP:57999}, cyber_short:{USD:1000,HKD:7800,SGD:1349,AED:3690,GBP:799,CAD:1399,PHP:57999} };
+  var WAS_MINI = {USD:150,HKD:1199,SGD:199,AED:549,GBP:119,CAD:209,PHP:8699}, WAS_SHORT = {USD:1500,HKD:11700,SGD:1999,AED:5499,GBP:1199,CAD:2099,PHP:86999};
+  var WAS = { ai_mini:WAS_MINI, cyber_mini:WAS_MINI, ai_short:WAS_SHORT, cyber_short:WAS_SHORT };
   function isFixed(){ return !!FIXED[coTrack.value]; }
   var mo = $('#mo'), coTrack = $('#coTrack'), coRegion = $('#coRegion'), coCcy = $('#coCcy');
   function coCurrency(){ return coCcy.value; }
@@ -1380,8 +1383,9 @@ document.documentElement.classList.add('js');
     $('#coAmt').textContent = money(c, coAmount());
     $('#coPlanWrap').style.display = fixed ? 'none' : '';
     if (fixed) coPlan.value = 'full';
-    $('#coLabel').textContent = fixed ? ({ai_mini:'AI Mini, one live session', cyber_mini:'Cyber Mini, one live session', ai_short:'AI Short Course, live', cyber_short:'Cyber Short Course, 12-hour certificate'})[coTrack.value] : ({full:'Early-bird price, per track', plan:'Per month, for 3 months', deposit:'Deposit today, holds the early-bird price'})[coPlan.value];
-    $('#coWas').textContent = fixed ? 'Pay in your local currency' : 'Standard ' + money(c, PRICES.standard[c]);
+    $('#coLabel').textContent = fixed ? ({ai_mini:'Early-bird launch price', cyber_mini:'Early-bird launch price', ai_short:'Early-bird launch price · starts 1 Dec', cyber_short:'Early-bird launch price · starts 1 Dec'})[coTrack.value] : ({full:'Early-bird price, per track', plan:'Per month, for 3 months', deposit:'Deposit today, holds the early-bird price'})[coPlan.value];
+    var was = fixed ? WAS[coTrack.value][c] : PRICES.standard[c]; var save = Math.round((1 - coAmount() / was) * 100);
+    $('#coWas').innerHTML = (coPlan.value === 'full' || fixed) ? '<s>' + money(c, was) + '</s><br><b style="color:var(--ink)">Early bird · save ' + save + '%</b>' : '<s>' + money(c, was) + '</s> full price';
   }
 
   // The checkout currency follows the region the buyer picks (US -> USD, SEA -> SGD, HK -> HKD)
@@ -1401,7 +1405,7 @@ document.documentElement.classList.add('js');
     else if (isFixed()) coTrack.value = 'entrepreneurs';
     if (opts.region) coRegion.value = opts.region;
     else coRegion.value = ({ HKD:'Hong Kong (in person)', USD:'United States (remote)', CAD:'United States (remote)', SGD:'Southeast Asia (remote)', PHP:'Southeast Asia (remote)' })[ccy] || coRegion.value;
-    // A region button (e.g. "Reserve: US cohort") sets the currency; otherwise keep the one shown on the page.
+    // A region button (e.g. "Enrol: US cohort") sets the currency; otherwise keep the one shown on the page.
     coCcy.value = opts.region ? ccyForRegion() : ccy;
     $('#coDone').style.display = 'none'; $('#coErr').classList.remove('show');
     $('#coPay').disabled = false; $('#coLater').disabled = false;
