@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="index,follow">
-<meta name="description" content="Live AI courses that pay off: AI for Founders, AI for Automation and Cyber. One-session Minis from US$99 or live Short Courses from US$1,000. Next cohort starts 1 December 2026.">
+<meta name="description" content="Live AI courses that pay off: AI for Founders, AI for Automation and Cyber. Self-paced 4-week Minis with weekly AMAs from US$99, or 4-week structured live Short Courses from US$1,000. Next cohort starts 1 December 2026.">
 <meta property="og:title" content="LevelUp: get genuinely good at AI">
 <meta property="og:description" content="Live AI courses: AI for Founders, AI for Automation and Cyber. Next cohort starts 1 December 2026.">
 <meta property="og:url" content="https://levellup.co/">
@@ -636,6 +636,15 @@ body{padding-bottom:76px}
 .hx .cdn{display:inline-flex;align-items:center;gap:8px;background:rgba(255,91,46,.16);color:#FFC9B8;font-weight:700;font-size:14px;border-radius:999px;padding:6px 12px;margin-bottom:14px}
 .hx .cdn:before{content:"";width:8px;height:8px;border-radius:50%;background:var(--yellow)}
 .sbar .t s{opacity:.6}
+.mt6{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:36px}
+@media(max-width:900px){.mt6{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.mt6{grid-template-columns:1fr}}
+.mt{background:#1E1D1A;border:1px solid #2E2D29;border-radius:22px;overflow:hidden;display:flex;flex-direction:column;min-width:0}
+.mt img{width:100%;height:200px;object-fit:cover;display:block}
+.mt-b{padding:20px 22px 24px;display:flex;flex-direction:column;gap:8px}
+.mt-b h3{font-size:21px;color:#fff}
+.mt-b p{font-size:15px;color:#BDBAB0}
+.mt-b a{color:#FFC9B8;font-weight:700}
 .psub{position:sticky;top:68px;z-index:45;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
 .psub .wrap{display:flex;align-items:center;gap:6px;overflow-x:auto;padding-top:10px;padding-bottom:10px;scrollbar-width:none}
 .psub a{flex:none;font-size:14px;font-weight:600;padding:8px 14px;border-radius:999px;text-decoration:none;color:var(--ink2)}
@@ -694,9 +703,9 @@ window.ACC_GA4_ID = '';          // GA4 > Admin > Data streams > Measurement ID 
     <nav class="links" aria-label="Main">
       <div class="dd"><button type="button" class="dd-b" aria-haspopup="true" aria-expanded="false">Courses <svg viewBox="0 0 12 8" width="11" height="8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M1 1.5l5 5 5-5"/></svg></button>
         <div class="ddp" role="menu">
-          <div class="ddc"><a class="ddh" href="founders/"><span class="ddi">🚀</span>AI for Founders</a><p>Build and sell an AI offer. Run sales and ops with AI.</p><a class="ddl" href="founders/#pricing">Mini <span>one live session</span></a><a class="ddl" href="founders/#pricing">Short Course <span>4 weeks live</span></a></div>
-          <div class="ddc"><a class="ddh" href="automation/"><span class="ddi">⚙️</span>AI for Automation</a><p>Automate real work in your job with n8n, Zapier, Make and Claude.</p><a class="ddl" href="automation/#pricing">Mini <span>one live session</span></a><a class="ddl" href="automation/#pricing">Short Course <span>4 weeks live</span></a></div>
-          <div class="ddc"><a class="ddh" href="cyber/"><span class="ddi">🛡️</span>Cyber</a><p>Cybersecurity and AI security. Hack the Bot, then defend it.</p><a class="ddl" href="cyber/#programs">Mini <span>one live session</span></a><a class="ddl" href="cyber/#programs">Short Course <span>12-hour certificate</span></a></div>
+          <div class="ddc"><a class="ddh" href="founders/"><span class="ddi">🚀</span>AI for Founders</a><p>Build and sell an AI offer. Run sales and ops with AI.</p><a class="ddl" href="founders/#pricing">Mini <span>4 weeks self-paced + AMAs</span></a><a class="ddl" href="founders/#pricing">Short Course <span>4 weeks structured live</span></a></div>
+          <div class="ddc"><a class="ddh" href="automation/"><span class="ddi">⚙️</span>AI for Automation</a><p>Automate real work in your job with n8n, Zapier, Make and Claude.</p><a class="ddl" href="automation/#pricing">Mini <span>4 weeks self-paced + AMAs</span></a><a class="ddl" href="automation/#pricing">Short Course <span>4 weeks structured live</span></a></div>
+          <div class="ddc"><a class="ddh" href="cyber/"><span class="ddi">🛡️</span>Cyber</a><p>Cybersecurity and AI security. Hack the Bot, then defend it.</p><a class="ddl" href="cyber/#programs">Mini <span>4 weeks self-paced + AMAs</span></a><a class="ddl" href="cyber/#programs">Short Course <span>4 weeks · certificate</span></a></div>
           <div class="ddf"><a href="#courses">View all courses →</a><span>Next cohort starts Tuesday 1 December 2026</span></div>
         </div>
       </div>
@@ -738,13 +747,13 @@ window.ACC_GA4_ID = '';          // GA4 > Admin > Data streams > Measurement ID 
         <div class="kpi"><div><small>Workflows built</small><b>6</b></div><div><small>Hours saved / wk</small><b>11</b></div></div>
         <div class="prog"><i style="width:72%"></i></div>
         <span class="pill">✓ Automation live in your actual job</span>
-        <div class="bal" style="margin-top:auto"><small>Next live session</small><div class="n" style="font-size:22px;margin-bottom:4px">Tue · 7:00pm</div><small>Office hours Thu, optional</small></div>
+        <div class="bal" style="margin-top:auto"><small>Next live session</small><div class="n" style="font-size:22px;margin-bottom:4px">Tue · 7:00pm</div><small>Live AMA Thu</small></div>
       </div></div>
       <div class="ph c"><div class="sc">
         <div class="bar"><span>Certificate</span><span>9:41</span></div>
         <div class="hi">You did it 🎓</div>
         <div class="bal"><small>Cyber Short Course</small><div class="n">Certified</div>
-          <div class="tx"><div><span><i>🛡️</i><span>12 hours<small>Dec 2026 · HK</small></span></span><b>✓</b></div><div><span><i>💸</i><span>First gig<small>LevelUp Jobs</small></span></span><b>~$100/hr</b></div></div></div>
+          <div class="tx"><div><span><i>🛡️</i><span>4 weeks<small>Dec 2026 · HK</small></span></span><b>✓</b></div><div><span><i>💸</i><span>First gig<small>LevelUp Jobs</small></span></span><b>~$100/hr</b></div></div></div>
         <span class="pill">✓ Shareable certificate</span>
       </div></div>
       <div class="ph a"><div class="sc">
@@ -784,7 +793,7 @@ window.ACC_GA4_ID = '';          // GA4 > Admin > Data streams > Measurement ID 
   <div class="wrap">
     <p class="eyebrow rv">Our courses</p>
     <h2 class="rv">pick a track. pick your pace.</h2>
-    <p class="lead rv" style="margin-top:16px;max-width:56ch">Every track comes two ways. Try it in one live <b>Mini</b> session, or go all in on the live <b>Short Course</b> and leave with something that earns.</p>
+    <p class="lead rv" style="margin-top:16px;max-width:56ch">Every track comes two ways. Take the <b>Mini</b>: 4 weeks at your own pace, with live AMAs every week as you go. Or go all in on the <b>Short Course</b>: 4 weeks of structured live sessions, and leave with something that earns.</p>
     <div class="clist">
       <div class="cl rv">
         <span class="ic">🚀</span><p class="cl-k">For founders and freelancers</p><h3>AI for Founders</h3>
@@ -802,7 +811,7 @@ window.ACC_GA4_ID = '';          // GA4 > Admin > Data streams > Measurement ID 
       </div>
       <div class="cl k rv">
         <span class="ic">🛡️</span><p class="cl-k">For career switchers and side income</p><h3>Cyber</h3>
-        <p>Cybersecurity and AI security, hands on. Hack the Bot, learn to defend it, earn a 12-hour certificate and access paid security gigs.</p>
+        <p>Cybersecurity and AI security, hands on. Hack the Bot, learn to defend it, earn a certificate in 4 weeks and access paid security gigs.</p>
         <div class="toolrow"><span>AI red-teaming</span><span>ethical hacking</span><span>cloud</span></div>
         <ul class="cl-p"><li><span>Mini</span><b><s data-p="mini-was">US$150</s> <span data-p="mini">US$99</span></b></li><li><span>Short Course</span><b><s data-p="short-was">US$1,500</s> <span data-p="short">US$1,000</span></b></li></ul>
         <div class="cl-a"><button type="button" class="btn btn-y" data-reserve data-track="cyber_short">Enrol now</button><a class="btn btn-o" href="cyber/">Course details</a></div>
@@ -837,11 +846,11 @@ window.ACC_GA4_ID = '';          // GA4 > Admin > Data streams > Measurement ID 
           <details class="q"><summary><span><em>Week 3</em>AI for sales</span></summary><ul><li><b>Live</b><span>A lead research engine, a sales page that converts and an outreach system. You send your first messages live in class.</span></li></ul></details>
           <details class="q"><summary><span><em>Week 4</em>AI for ops, then launch</span></summary><ul><li><b>Live</b><span>Proposals, onboarding and reporting on autopilot. Demo day: present your offer, your numbers and your next 30 days.</span></li></ul></details>
         </div>
-        <p class="mininote"><b>The Mini</b> is one live 2-hour session: find the AI offer you could sell this month and leave with a one-page offer and a price.</p>
+        <p class="mininote"><b>The Mini</b> is the same 4 weeks at your own pace, with a live AMA every week as you go. Work through each step on your schedule and leave with your offer and a price.</p>
       </div>
       <div class="duo" id="founders-pricing">
-        <div class="pc rv"><span class="label-s">MINI</span><h3>AI for Founders Mini</h3><p class="dur">One live 2-hour session</p><div class="pr"><s data-p="mini-was">US$150</s> <span data-p="mini">US$99</span></div><em class="savetag" data-save="mini">Early bird · save 34%</em><button type="button" class="btn btn-o" data-reserve data-track="founders_mini">Enrol now</button></div>
-        <div class="pc on rv"><span class="label-s" style="background:var(--yellow);color:var(--ink)">SHORT COURSE</span><h3>AI for Founders Short Course</h3><p class="dur">Starts Tue 1 Dec 2026 · 4 weeks live · about 3 hrs a week</p><div class="pr"><s data-p="short-was">US$1,500</s> <span data-p="short">US$1,000</span></div><em class="savetag" data-save="short">Early bird · save 33%</em><ul><li>Your offer, priced and live</li><li>AI sales and ops systems</li><li>Demo day with the cohort</li><li>Replays, community and certificate</li></ul><button type="button" class="btn btn-k" data-reserve data-track="founders_short">Enrol now</button></div>
+        <div class="pc rv"><span class="label-s">MINI</span><h3>AI for Founders Mini</h3><p class="dur">Mini · 4 weeks self-paced + weekly AMAs</p><div class="pr"><s data-p="mini-was">US$150</s> <span data-p="mini">US$99</span></div><em class="savetag" data-save="mini">Early bird · save 34%</em><button type="button" class="btn btn-o" data-reserve data-track="founders_mini">Enrol now</button></div>
+        <div class="pc on rv"><span class="label-s" style="background:var(--yellow);color:var(--ink)">SHORT COURSE</span><h3>AI for Founders Short Course</h3><p class="dur">Starts Tue 1 Dec 2026 · 4 weeks · structured live sessions</p><div class="pr"><s data-p="short-was">US$1,500</s> <span data-p="short">US$1,000</span></div><em class="savetag" data-save="short">Early bird · save 33%</em><ul><li>Your offer, priced and live</li><li>AI sales and ops systems</li><li>Demo day with the cohort</li><li>Replays, community and certificate</li></ul><button type="button" class="btn btn-k" data-reserve data-track="founders_short">Enrol now</button></div>
       </div>
     </div>
   </div>
@@ -872,12 +881,12 @@ window.ACC_GA4_ID = '';          // GA4 > Admin > Data streams > Measurement ID 
           <details class="q"><summary><span><em>Week 3</em>Agents, documents and inboxes</span></summary><ul><li><b>Live</b><span>Hand multi-step tasks to Claude. Let AI read, sort and draft across email, documents and spreadsheets.</span></li></ul></details>
           <details class="q"><summary><span><em>Week 4</em>Ship it in your job</span></summary><ul><li><b>Live</b><span>Reliability, privacy and handoffs so your team can trust it. Go live, measure hours saved and present to the cohort.</span></li></ul></details>
         </div>
-        <p class="mininote"><b>The Mini</b> is one live 2-hour session: build your first working automation live, with a template you can reuse the next morning.</p>
+        <p class="mininote"><b>The Mini</b> is the same 4 weeks at your own pace, with a live AMA every week as you go. Build each automation on your schedule and bring your questions to the AMA.</p>
         <div class="guarantee" style="background:#fff;border:1px solid var(--line)"><span>🎯</span><div><b>Outcome guarantee.</b> Do the work and don't ship one real automation in your job by the final session? Your money back.</div></div>
       </div>
       <div class="duo" id="automation-pricing">
-        <div class="pc rv"><span class="label-s">MINI</span><h3>AI for Automation Mini</h3><p class="dur">One live 2-hour session</p><div class="pr"><s data-p="mini-was">US$150</s> <span data-p="mini">US$99</span></div><em class="savetag" data-save="mini">Early bird · save 34%</em><button type="button" class="btn btn-o" data-reserve data-track="ai_mini">Enrol now</button></div>
-        <div class="pc on rv"><span class="label-s" style="background:var(--yellow);color:var(--ink)">SHORT COURSE</span><h3>AI for Automation Short Course</h3><p class="dur">Starts Tue 1 Dec 2026 · 4 weeks live · about 3 hrs a week</p><div class="pr"><s data-p="short-was">US$1,500</s> <span data-p="short">US$1,000</span></div><em class="savetag" data-save="short">Early bird · save 33%</em><ul><li>Real automations in your job</li><li>n8n, Zapier, Make and Claude</li><li>Outcome guarantee</li><li>Replays, community and certificate</li></ul><button type="button" class="btn btn-k" data-reserve data-track="ai_short">Enrol now</button></div>
+        <div class="pc rv"><span class="label-s">MINI</span><h3>AI for Automation Mini</h3><p class="dur">Mini · 4 weeks self-paced + weekly AMAs</p><div class="pr"><s data-p="mini-was">US$150</s> <span data-p="mini">US$99</span></div><em class="savetag" data-save="mini">Early bird · save 34%</em><button type="button" class="btn btn-o" data-reserve data-track="ai_mini">Enrol now</button></div>
+        <div class="pc on rv"><span class="label-s" style="background:var(--yellow);color:var(--ink)">SHORT COURSE</span><h3>AI for Automation Short Course</h3><p class="dur">Starts Tue 1 Dec 2026 · 4 weeks · structured live sessions</p><div class="pr"><s data-p="short-was">US$1,500</s> <span data-p="short">US$1,000</span></div><em class="savetag" data-save="short">Early bird · save 33%</em><ul><li>Real automations in your job</li><li>n8n, Zapier, Make and Claude</li><li>Outcome guarantee</li><li>Replays, community and certificate</li></ul><button type="button" class="btn btn-k" data-reserve data-track="ai_short">Enrol now</button></div>
       </div>
     </div>
   </div>
@@ -890,7 +899,7 @@ window.ACC_GA4_ID = '';          // GA4 > Admin > Data streams > Measurement ID 
       <div>
         <p class="eyebrow rv">Course 3 · LevelUp Cyber</p>
         <h2 class="rv">learn to <span style="color:var(--yellow)">hack</span> the AI. get paid to secure it.</h2>
-        <p class="lead rv" style="margin-top:16px;max-width:44ch">Hands-on cybersecurity and AI security. Break a deliberately vulnerable AI chatbot, then learn to defend it. Pass the 12-hour certificate and get access to paid security gigs through LevelUp Jobs.</p>
+        <p class="lead rv" style="margin-top:16px;max-width:44ch">Hands-on cybersecurity and AI security. Break a deliberately vulnerable AI chatbot, then learn to defend it. Earn the certificate in 4 weeks and get access to paid security gigs through LevelUp Jobs.</p>
         <div class="cta-row rv" style="margin-top:24px"><button type="button" class="btn btn-y" data-reserve data-track="cyber_short">Enrol now</button><a class="btn btn-o" href="#cyber-syllabus">View syllabus</a></div>
         <nav class="subnav rv" aria-label="Cyber"><a href="#cyber-syllabus">Syllabus</a><a href="#cohorts">Cohorts</a><a href="#cyber-pricing">Pricing</a><a href="cyber/">Full Cyber page →</a></nav>
       </div>
@@ -903,18 +912,19 @@ window.ACC_GA4_ID = '';          // GA4 > Admin > Data streams > Measurement ID 
     </div>
     <div class="cbody">
       <div id="cyber-syllabus">
-        <h3 class="sh">Short Course syllabus · 3 weeks · 12-hour certificate</h3>
+        <h3 class="sh">Short Course syllabus · 4 weeks · certificate</h3>
         <div class="syl">
           <details class="q" open><summary><span><em>Week 1</em>Foundations</span></summary><ul><li><b>Live</b><span>Networks, Linux, cloud basics, how attacks work, and the threat landscape in Asia.</span></li></ul></details>
           <details class="q"><summary><span><em>Week 2</em>Hack the AI</span></summary><ul><li><b>Live</b><span>Ethical hacking and web app testing, then AI red-teaming: prompt injection, jailbreaks and agent abuse.</span></li></ul></details>
-          <details class="q"><summary><span><em>Week 3</em>Defend and certify</span></summary><ul><li><b>Live</b><span>Patch what you broke, write the report, present your findings and earn the 12-hour certificate.</span></li></ul></details>
+          <details class="q"><summary><span><em>Week 3</em>Defend</span></summary><ul><li><b>Live</b><span>Patch what you broke: lock down prompts, data and agents, and test your fixes.</span></li></ul></details>
+          <details class="q"><summary><span><em>Week 4</em>Report and certify</span></summary><ul><li><b>Live</b><span>Write the report, present your findings and earn the certificate.</span></li></ul></details>
           <details class="q"><summary><span><em>After</em>LevelUp Jobs</span></summary><ul><li><b>Earn</b><span>Paid, hourly security gigs: testing, bug hunting and research tasks from security teams.</span></li></ul></details>
         </div>
-        <p class="mininote"><b>The Mini</b> is one live Hack the Bot session: break a vulnerable AI chatbot and learn the attacks every AI team needs to defend against.</p>
+        <p class="mininote"><b>The Mini</b> is the same 4 weeks at your own pace, with a live AMA every week as you go. Work through the Hack the Bot labs on your schedule.</p>
       </div>
       <div class="duo" id="cyber-pricing">
-        <div class="pc rv"><span class="label-s">MINI</span><h3>Cyber Mini</h3><p class="dur">One live 2-hour session</p><div class="pr"><s data-p="mini-was">US$150</s> <span data-p="mini">US$99</span></div><em class="savetag" data-save="mini">Early bird · save 34%</em><button type="button" class="btn btn-o" data-reserve data-track="cyber_mini">Enrol now</button></div>
-        <div class="pc on rv"><span class="label-s" style="background:var(--yellow);color:var(--ink)">SHORT COURSE</span><h3>Cyber Short Course</h3><p class="dur">Starts Tue 1 Dec 2026 · 3 weeks live · 12-hour certificate</p><div class="pr"><s data-p="short-was">US$1,500</s> <span data-p="short">US$1,000</span></div><em class="savetag" data-save="short">Early bird · save 33%</em><ul><li>Hack the Bot labs</li><li>AI red-teaming and defence</li><li>LevelUp Jobs access</li><li>Replays, community and certificate</li></ul><button type="button" class="btn btn-k" data-reserve data-track="cyber_short">Enrol now</button></div>
+        <div class="pc rv"><span class="label-s">MINI</span><h3>Cyber Mini</h3><p class="dur">Mini · 4 weeks self-paced + weekly AMAs</p><div class="pr"><s data-p="mini-was">US$150</s> <span data-p="mini">US$99</span></div><em class="savetag" data-save="mini">Early bird · save 34%</em><button type="button" class="btn btn-o" data-reserve data-track="cyber_mini">Enrol now</button></div>
+        <div class="pc on rv"><span class="label-s" style="background:var(--yellow);color:var(--ink)">SHORT COURSE</span><h3>Cyber Short Course</h3><p class="dur">Starts Tue 1 Dec 2026 · 4 weeks · structured live sessions · certificate</p><div class="pr"><s data-p="short-was">US$1,500</s> <span data-p="short">US$1,000</span></div><em class="savetag" data-save="short">Early bird · save 33%</em><ul><li>Hack the Bot labs</li><li>AI red-teaming and defence</li><li>LevelUp Jobs access</li><li>Replays, community and certificate</li></ul><button type="button" class="btn btn-k" data-reserve data-track="cyber_short">Enrol now</button></div>
       </div>
     </div>
   </div>
@@ -927,12 +937,12 @@ window.ACC_GA4_ID = '';          // GA4 > Admin > Data streams > Measurement ID 
     <h2 class="rv">next cohort starts 1 December.</h2>
     <p class="lead rv" style="margin-top:14px;max-width:52ch">Pick the cohort that fits your time zone. Seats are capped so every session stays live and hands-on.</p>
     <div class="cohorts c3">
-      <div class="cc rv"><span class="seats hot" data-seats="founders_short_asia">24 seats max</span><span class="rg">🚀 AI for Founders · Asia (GMT+8)</span><span class="dt">Starts Tue 1 Dec 2026</span><span class="cd" data-countdown></span><span class="meta">4 weeks · Tuesdays 7:00 to 10:00pm HKT / SGT</span><button type="button" class="btn btn-k" data-reserve data-track="founders_short" data-region="Southeast Asia (remote)">Enrol now</button></div>
-      <div class="cc rv"><span class="seats hot" data-seats="founders_short_americas">24 seats max</span><span class="rg">🚀 AI for Founders · Americas (ET)</span><span class="dt">Starts Tue 1 Dec 2026</span><span class="cd" data-countdown></span><span class="meta">4 weeks · Tuesdays 7:00 to 10:00pm ET</span><button type="button" class="btn btn-k" data-reserve data-track="founders_short" data-region="United States (remote)">Enrol now</button></div>
-      <div class="cc rv"><span class="seats hot" data-seats="ai_short_asia">24 seats max</span><span class="rg">⚙️ AI for Automation · Asia (GMT+8)</span><span class="dt">Starts Tue 1 Dec 2026</span><span class="cd" data-countdown></span><span class="meta">4 weeks · Tuesdays 7:00 to 10:00pm HKT / SGT</span><button type="button" class="btn btn-k" data-reserve data-track="ai_short" data-region="Southeast Asia (remote)">Enrol now</button></div>
-      <div class="cc rv"><span class="seats hot" data-seats="ai_short_americas">24 seats max</span><span class="rg">⚙️ AI for Automation · Americas (ET)</span><span class="dt">Starts Tue 1 Dec 2026</span><span class="cd" data-countdown></span><span class="meta">4 weeks · Tuesdays 7:00 to 10:00pm ET</span><button type="button" class="btn btn-k" data-reserve data-track="ai_short" data-region="United States (remote)">Enrol now</button></div>
-      <div class="cc rv"><span class="seats hot" data-seats="cyber_short_hk">20 seats max</span><span class="rg">🛡️ Cyber · Hong Kong</span><span class="dt">Starts Tue 1 Dec 2026</span><span class="cd" data-countdown></span><span class="meta">3 weeks · Tue evenings online + Sat in person · 12-hour certificate</span><button type="button" class="btn btn-y" data-reserve data-track="cyber_short" data-region="Hong Kong (in person)">Enrol now</button></div>
-      <div class="cc sc rv"><span class="seats">Every track</span><span class="rg">⚡ Mini sessions · online</span><span class="dt">From December</span><span class="meta">One live 2-hour session per track. We confirm your date by email when you enrol.</span><button type="button" class="btn btn-k" data-reserve data-track="founders_mini">Enrol now</button></div>
+      <div class="cc rv"><span class="seats hot" data-seats="founders_short_asia">24 seats max</span><span class="rg">🚀 AI for Founders · Asia (GMT+8)</span><span class="dt">Starts Tue 1 Dec 2026</span><span class="cd" data-countdown></span><span class="meta">4 weeks · structured live sessions, Tuesdays 7:00 to 10:00pm HKT / SGT</span><button type="button" class="btn btn-k" data-reserve data-track="founders_short" data-region="Southeast Asia (remote)">Enrol now</button></div>
+      <div class="cc rv"><span class="seats hot" data-seats="founders_short_americas">24 seats max</span><span class="rg">🚀 AI for Founders · Americas (ET)</span><span class="dt">Starts Tue 1 Dec 2026</span><span class="cd" data-countdown></span><span class="meta">4 weeks · structured live sessions, Tuesdays 7:00 to 10:00pm ET</span><button type="button" class="btn btn-k" data-reserve data-track="founders_short" data-region="United States (remote)">Enrol now</button></div>
+      <div class="cc rv"><span class="seats hot" data-seats="ai_short_asia">24 seats max</span><span class="rg">⚙️ AI for Automation · Asia (GMT+8)</span><span class="dt">Starts Tue 1 Dec 2026</span><span class="cd" data-countdown></span><span class="meta">4 weeks · structured live sessions, Tuesdays 7:00 to 10:00pm HKT / SGT</span><button type="button" class="btn btn-k" data-reserve data-track="ai_short" data-region="Southeast Asia (remote)">Enrol now</button></div>
+      <div class="cc rv"><span class="seats hot" data-seats="ai_short_americas">24 seats max</span><span class="rg">⚙️ AI for Automation · Americas (ET)</span><span class="dt">Starts Tue 1 Dec 2026</span><span class="cd" data-countdown></span><span class="meta">4 weeks · structured live sessions, Tuesdays 7:00 to 10:00pm ET</span><button type="button" class="btn btn-k" data-reserve data-track="ai_short" data-region="United States (remote)">Enrol now</button></div>
+      <div class="cc rv"><span class="seats hot" data-seats="cyber_short_hk">20 seats max</span><span class="rg">🛡️ Cyber · Hong Kong</span><span class="dt">Starts Tue 1 Dec 2026</span><span class="cd" data-countdown></span><span class="meta">4 weeks · structured live sessions, Tue evenings online + Sat in person · certificate</span><button type="button" class="btn btn-y" data-reserve data-track="cyber_short" data-region="Hong Kong (in person)">Enrol now</button></div>
+      <div class="cc sc rv"><span class="seats">Every track</span><span class="rg">⚡ Mini · any track · online</span><span class="dt">Starts Tue 1 Dec 2026</span><span class="meta">4 weeks self-paced + weekly AMAs. 4 weeks at your own pace, join live AMAs every week as you go.</span><button type="button" class="btn btn-k" data-reserve data-track="founders_mini">Enrol now</button></div>
     </div>
     <p class="rv" style="margin-top:20px;color:var(--muted)">Can't make these times? <a href="#" data-wa="general" style="font-weight:700;color:var(--ink)">Talk to our team</a> to join a future cohort.</p>
   </div>
@@ -951,20 +961,20 @@ window.ACC_GA4_ID = '';          // GA4 > Admin > Data streams > Measurement ID 
     <div class="pgrid">
       <div class="pc rv">
         <span class="label-s">MINI · ANY TRACK</span>
-        <h3>One live session</h3>
+        <h3>4 weeks, self-paced</h3>
         <div class="pr"><s data-p="mini-was">US$150</s> <span data-p="mini">US$99</span></div>
         <em class="savetag" data-save="mini">Early bird · save 34%</em>
         <div class="bd"><div><span>Regular price</span><span data-p="mini-was">US$150</span></div><div><span>Early-bird discount</span><span data-p="mini-off">-US$51</span></div><div class="tot"><span>Total</span><span data-p="mini">US$99</span></div></div>
-        <ul><li>One live 2-hour session with a practitioner</li><li>Build along live, not slides</li><li>Templates and the replay to keep</li><li>Questions answered live</li></ul>
+        <ul><li>4 weeks at your own pace</li><li>A live AMA every week as you go</li><li>Lessons, labs and templates to keep</li><li>Private community access</li></ul>
         <button type="button" class="btn btn-o" data-reserve data-track="founders_mini">Enrol now</button>
       </div>
       <div class="pc on rv">
         <span class="label-s" style="background:var(--yellow);color:var(--ink)">SHORT COURSE · ANY TRACK · STARTS 1 DEC</span>
-        <h3>Live cohort</h3>
+        <h3>4 weeks, structured live sessions</h3>
         <div class="pr"><s data-p="short-was">US$1,500</s> <span data-p="short">US$1,000</span></div>
         <em class="savetag" data-save="short">Early bird · save 33%</em>
         <div class="bd"><div><span>Regular price</span><span data-p="short-was">US$1,500</span></div><div><span>Early-bird discount</span><span data-p="short-off">-US$500</span></div><div class="tot"><span>Total</span><span data-p="short">US$1,000</span></div></div>
-        <ul><li>4 weeks of live sessions (Cyber: 3 weeks and a 12-hour certificate)</li><li>Optional Thursday office hours</li><li>Private Skool community with your cohort</li><li>Lifetime replay access</li><li>Shareable certificate on completion</li><li>Free repeat seat in a future cohort</li><li>Full refund up to the halfway point</li></ul>
+        <ul><li>4 weeks of structured live sessions, starting 1 December</li><li>Weekly live AMAs included</li><li>Private Skool community with your cohort</li><li>Lifetime replay access</li><li>Shareable certificate on completion</li><li>Free repeat seat in a future cohort</li><li>Full refund up to the halfway point</li></ul>
         <button type="button" class="btn btn-k" data-reserve data-track="founders_short">Enrol now</button>
       </div>
     </div>
@@ -977,7 +987,7 @@ window.ACC_GA4_ID = '';          // GA4 > Admin > Data streams > Measurement ID 
     <p class="eyebrow rv">Board and leadership</p>
     <h2 class="rv">the team behind it.</h2>
     <div class="team4">
-      <div class="tm rv"><img src="img/team-resham.jpg" alt="Resham Hemlani-Nathani" loading="lazy"><div class="tm-b"><p class="role">CEO and co-founder</p><h3>Resham Hemlani-Nathani</h3><p>Resham runs LevelUp and leads the programmes, curriculum and operations. She was on the founding team of Xccelerate as Chief People Officer, helping grow it into one of Hong Kong's leading tech education companies, and went on to found UNTAP, a talent business across Hong Kong, Dubai, India and Manila.</p><ul class="creds"><li>Founding team and Chief People Officer, Xccelerate</li><li>Founder, UNTAP</li><li>Leads programmes, curriculum and operations</li></ul></div></div>
+      <div class="tm rv"><img src="img/team-resham.jpg" alt="Resham Nathani" loading="lazy"><div class="tm-b"><p class="role">CEO and co-founder</p><h3>Resham Nathani</h3><p>Resham runs LevelUp and leads the programmes, curriculum and operations. She was on the founding team of Xccelerate as Chief People Officer, helping grow it into one of Hong Kong's leading tech education companies, and went on to found UNTAP, a talent business across Hong Kong, Dubai, India and Manila.</p><ul class="creds"><li>Founding team and Chief People Officer, Xccelerate</li><li>Founder, UNTAP</li><li>Leads programmes, curriculum and operations</li></ul></div></div>
       <div class="tm rv"><img src="img/team-kay.jpg" alt="Kay Hui" loading="lazy"><div class="tm-b"><p class="role">CMO and co-founder</p><h3>Kay Hui</h3><p>Kay runs marketing and the cohort community at LevelUp, so every session is full of people who show up and build together. She ran marketing, campaigns and community at Xccelerate, where she worked on student outreach, hiring partner events and the alumni community in Hong Kong.</p><ul class="creds"><li>Marketing and community, Xccelerate</li><li>Leads brand, content and the cohort community</li><li>Based in Hong Kong</li></ul></div></div>
       <div class="tm rv"><img src="img/team-aka-sq.jpg" alt="Aka" loading="lazy"><div class="tm-b"><p class="role">Chief Growth Officer</p><h3>Aka</h3><p>Aka leads sales, partnerships and growth marketing at LevelUp, with a focus on the US and Canada. She builds partnerships with employers, communities and universities that want their people trained in AI, runs the campaigns that fill each cohort, and leads admissions. She is the first person most students speak to: message her on WhatsApp any time for a straight answer on fit, timing and price.</p><ul class="creds"><li>Leads sales and admissions across the US and Canada</li><li>Builds employer, community and university partnerships</li><li>Runs growth marketing and cohort campaigns</li><li>Your first point of contact on WhatsApp</li></ul></div></div>
       <div class="tm rv"><img src="img/lavine.jpg" alt="Lavine Hemlani" loading="lazy"><div class="tm-b"><p class="role">Board member</p><h3>Lavine Hemlani</h3><p>Lavine founded Xccelerate in Hong Kong in 2017 and built it into an AI and tech academy that trained 20,000+ people and placed graduates with 500+ companies, before it was acquired by GetLinks in 2025. He sits on the LevelUp board and backs its mission: live, practical AI training for people who want results, not theory.</p><ul class="creds"><li>Founder, Xccelerate (acquired by GetLinks)</li><li>Former Lazard M&amp;A, New York · University of Chicago</li><li>Interviewed live on CNN on training workers for the AI era</li></ul></div></div>
@@ -991,13 +1001,13 @@ window.ACC_GA4_ID = '';          // GA4 > Admin > Data streams > Measurement ID 
     <p class="eyebrow rv">How it works</p>
     <h2 class="rv">built around finishing.</h2>
     <p class="lead rv" style="margin-top:16px">Most people never finish online courses. Everything here exists to make sure you do, and that it pays off.</p>
-    <div class="mega" style="margin-top:36px">
-      <div class="tile big ptile rv"><img src="img/live-1.jpg" alt="A professional in a live video call session" loading="lazy"><div class="pt-body"><h3>Live, not recorded</h3><p>Real instructors, live, every session. Replays are the backup, not the product.</p></div></div>
-      <div class="tile ptile rv"><img src="img/cohort-1.jpg" alt="A small group working together at a table with laptops" loading="lazy"><div class="pt-body"><h3>A community that pushes you</h3><p>A private Skool space built with your cohort.</p></div></div>
-      <div class="tile ptile rv"><img src="img/calendar-1.jpg" alt="Someone marking dates on a planner" loading="lazy"><div class="pt-body"><h3>Weekly accountability</h3><p>A fixed weekly arc, plus optional Thursday office hours to stay unstuck.</p></div></div>
-      <div class="tile y ptile rv"><img src="img/build-1.jpg" alt="Hands typing on a laptop, building a project" loading="lazy"><div class="pt-body"><h3>Ship something real</h3><p>An offer, an automation or a security report, live by the final session.</p></div></div>
-      <div class="tile ptile rv"><img src="img/network-1.jpg" alt="Professionals talking at an event" loading="lazy"><div class="pt-body"><h3>Certification</h3><p>A shareable certificate on completion.</p></div></div>
-      <div class="tile ptile rv"><img src="img/guarantee-1.jpg" alt="Two people shaking hands" loading="lazy"><div class="pt-body"><h3>Paid work after</h3><p>Graduates get access to paid gigs through <a href="jobs/" style="color:inherit;font-weight:700">LevelUp Jobs</a>.</p></div></div>
+    <div class="mt6">
+      <div class="mt rv"><img src="img/live-1.jpg" alt="A professional in a live video call session" loading="lazy"><div class="mt-b"><h3>Structured live sessions</h3><p>Short Courses run 4 weeks of live sessions with real instructors. Replays are the backup.</p></div></div>
+      <div class="mt rv"><img src="img/cohort-1.jpg" alt="A small group working together at a table with laptops" loading="lazy"><div class="mt-b"><h3>A community that pushes you</h3><p>A private Skool space shared with your cohort, Short Course and Mini alike.</p></div></div>
+      <div class="mt rv"><img src="img/calendar-1.jpg" alt="Someone marking dates on a planner" loading="lazy"><div class="mt-b"><h3>Weekly live AMAs</h3><p>Mini learners go at their own pace and bring questions to a live AMA every week.</p></div></div>
+      <div class="mt rv"><img src="img/build-1.jpg" alt="Hands typing on a laptop, building a project" loading="lazy"><div class="mt-b"><h3>Ship something real</h3><p>An offer, an automation or a security report, done by week 4.</p></div></div>
+      <div class="mt rv"><img src="img/network-1.jpg" alt="Professionals talking at an event" loading="lazy"><div class="mt-b"><h3>Certification</h3><p>A shareable certificate when you finish your course.</p></div></div>
+      <div class="mt rv"><img src="img/guarantee-1.jpg" alt="Two people shaking hands" loading="lazy"><div class="mt-b"><h3>Paid work after</h3><p>Graduates get access to paid gigs through <a href="jobs/">LevelUp Jobs</a>.</p></div></div>
     </div>
   </div>
 </section>
@@ -1069,7 +1079,7 @@ window.ACC_GA4_ID = '';          // GA4 > Admin > Data streams > Measurement ID 
 
 Hi [Manager's name],
 
-I'd like to join LevelUp's live Short Course, [AI for Automation / AI for Founders / Cyber], starting Tuesday 1 December 2026. It runs live for three to four weeks, about three to five hours a week, mostly outside core hours.
+I'd like to join LevelUp's live Short Course, [AI for Automation / AI for Founders / Cyber], starting Tuesday 1 December 2026. It runs for four weeks of structured live sessions, about three to five hours a week, mostly outside core hours.
 
 Why it matters for our team:
 - I'll build and ship one real AI workflow for [specific task or process] by the final session
@@ -1131,13 +1141,13 @@ Thanks,
     <p class="eyebrow rv">Questions</p>
     <h2 class="rv">before you enrol.</h2>
     <div class="faq">
-      <details class="q rv"><summary>What's the difference between a Mini and a Short Course?</summary><p>A Mini is one live 2-hour session: the fastest way to try a track and leave with something useful. The Short Course is the full live cohort: four weeks for the AI tracks, three weeks and a 12-hour certificate for Cyber, ending with something shipped.</p></details>
+      <details class="q rv"><summary>What's the difference between a Mini and a Short Course?</summary><p>Both run for 4 weeks. The Mini is self-paced: you work through it on your own schedule and join live AMAs every week as you go. The Short Course is the structured version: 4 weeks of live sessions with your cohort from 1 December, ending with something shipped. Cyber Short Course graduates earn a certificate.</p></details>
       <details class="q rv"><summary>How much does it cost?</summary><p>Every track is priced the same. Mini: US$99 early bird (regular US$150). Short Course: US$1,000 early bird (regular US$1,500). Prices are also shown in HKD, SGD, AED, GBP, CAD and PHP.</p></details>
-      <details class="q rv"><summary>When does the next cohort start?</summary><p>Tuesday 1 December 2026, for all three Short Courses. Mini sessions run from December and we confirm your date by email when you enrol.</p></details>
+      <details class="q rv"><summary>When does the next cohort start?</summary><p>Tuesday 1 December 2026, for all three Short Courses. The Mini also starts 1 December and runs at your own pace, with live AMAs every week.</p></details>
       <details class="q rv"><summary>How long does the early-bird price last?</summary><p>Early-bird pricing applies to the 1 December cohort while seats last. Your refund rights are the same either way.</p></details>
       <details class="q rv"><summary>Which track should I pick?</summary><p>AI for Founders if you want to sell an AI offer or run your company leaner. AI for Automation if you want to win back hours in your current job. Cyber if you want a new, well-paid security skill and paid gigs after. Still unsure? Take the quiz above or message Aka on WhatsApp.</p></details>
       <details class="q rv"><summary>Is this actually live, or am I watching recordings?</summary><p>Every session runs live with a real instructor. Replays exist so you never lose a session you miss.</p></details>
-      <details class="q rv"><summary>Can I try it before paying?</summary><p>Yes. Join a free 90-minute live workshop above, or start with a Mini for one session.</p></details>
+      <details class="q rv"><summary>Can I try it before paying?</summary><p>Yes. Join a free 90-minute live workshop above, or start with the self-paced Mini.</p></details>
       <details class="q rv"><summary>What's the refund policy?</summary><p>Full refund up to the halfway point of your Short Course, no questions asked. After that, the outcome guarantee applies: do the work and don't ship your track's deliverable by the final session, and you get your money back. See the <a href="refund/">refund policy</a>.</p></details>
       <details class="q rv"><summary>Do I need paid tools?</summary><p>You can do most of the course on free tiers. Some builds go further with a paid Claude or ChatGPT plan (about US$20 a month) or a paid automation plan. We tell you before each session what you need, and never require a tool we earn commission on.</p></details>
       <details class="q rv"><summary>Can I pay by FPS, PayMe or bank transfer?</summary><p>Yes. Choose "Prefer bank transfer or FPS? Send me a payment link" at checkout and we send you FPS or bank transfer details for Hong Kong, or a secure card link anywhere else. Your seat is held for 7 days while you pay.</p></details>
@@ -1256,9 +1266,9 @@ Thanks,
       <label class="fld"><span>Full name</span><input name="name" id="coName" autocomplete="name" required></label>
       <label class="fld"><span>Email</span><input name="email" id="coEmail" type="email" autocomplete="email" required></label>
       <label class="fld"><span>Course</span><select id="coTrack">
-        <optgroup label="AI for Founders"><option value="founders_short">AI for Founders · Short Course · starts 1 Dec</option><option value="founders_mini">AI for Founders · Mini · one live session</option></optgroup>
-        <optgroup label="AI for Automation"><option value="ai_short">AI for Automation · Short Course · starts 1 Dec</option><option value="ai_mini">AI for Automation · Mini · one live session</option></optgroup>
-        <optgroup label="Cyber"><option value="cyber_short">Cyber · Short Course · 12-hour certificate · starts 1 Dec</option><option value="cyber_mini">Cyber · Mini · one live session</option></optgroup>
+        <optgroup label="AI for Founders"><option value="founders_short">AI for Founders · Short Course · starts 1 Dec</option><option value="founders_mini">AI for Founders · Mini · 4 weeks self-paced + weekly AMAs</option></optgroup>
+        <optgroup label="AI for Automation"><option value="ai_short">AI for Automation · Short Course · starts 1 Dec</option><option value="ai_mini">AI for Automation · Mini · 4 weeks self-paced + weekly AMAs</option></optgroup>
+        <optgroup label="Cyber"><option value="cyber_short">Cyber · Short Course · 4 weeks · certificate · starts 1 Dec</option><option value="cyber_mini">Cyber · Mini · 4 weeks self-paced + weekly AMAs</option></optgroup>
       </select></label>
       <div class="two">
         <label class="fld"><span>Region</span><select id="coRegion"><option>Hong Kong (in person)</option><option>United States (remote)</option><option>Southeast Asia (remote)</option></select></label>
@@ -1383,7 +1393,7 @@ document.documentElement.classList.add('js');
   function coUpdate(){
     var c = coCurrency(), k = coTrack.value, mini = /_mini$/.test(k);
     $('#coAmt').textContent = money(c, coAmount());
-    $('#coLabel').textContent = mini ? 'Early-bird price · one live session' : 'Early-bird price · starts 1 Dec';
+    $('#coLabel').textContent = mini ? 'Early-bird price · 4 weeks self-paced + weekly AMAs' : 'Early-bird price · 4 weeks live · starts 1 Dec';
     var was = WAS[k][c], save = Math.round((1 - coAmount() / was) * 100);
     $('#coWas').innerHTML = '<s>' + money(c, was) + '</s><br><em class="savetag">Early bird · save ' + save + '%</em>';
   }
