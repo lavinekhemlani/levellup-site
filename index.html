@@ -1385,7 +1385,7 @@ document.documentElement.classList.add('js');
     if (fixed) coPlan.value = 'full';
     $('#coLabel').textContent = fixed ? ({ai_mini:'Early-bird launch price', cyber_mini:'Early-bird launch price', ai_short:'Early-bird launch price · starts 1 Dec', cyber_short:'Early-bird launch price · starts 1 Dec'})[coTrack.value] : ({full:'Early-bird price, per track', plan:'Per month, for 3 months', deposit:'Deposit today, holds the early-bird price'})[coPlan.value];
     var was = fixed ? WAS[coTrack.value][c] : PRICES.standard[c]; var save = Math.round((1 - coAmount() / was) * 100);
-    $('#coWas').innerHTML = (coPlan.value === 'full' || fixed) ? '<s>' + money(c, was) + '</s><br><b style="color:var(--ink)">Early bird · save ' + save + '%</b>' : '<s>' + money(c, was) + '</s> full price';
+    $('#coWas').innerHTML = (coPlan.value === 'full' || fixed) ? '<s>' + money(c, was) + '</s><br><em class="savetag">Early bird · save ' + save + '%</em>' : '<s>' + money(c, was) + '</s> full price';
   }
 
   // The checkout currency follows the region the buyer picks (US -> USD, SEA -> SGD, HK -> HKD)
