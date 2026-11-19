@@ -198,7 +198,7 @@ document.getElementById('wl').addEventListener('submit',function(e){
   d.append('_subject','LevelUp Jobs sign-up');d.append('page',location.href);
   fetch('https://formsubmit.co/ajax/a74db2f5833568f84a0825ec24a15a8f',{method:'POST',body:d,headers:{'Accept':'application/json'}})
    .then(function(){m.textContent="You're in. We'll send matching gigs as LevelUp Jobs opens.";f.reset();})
-   .catch(function(){m.textContent='Something went wrong. Email hello@levellup.co and we will add you.';});
+   .catch(function(){m.textContent='Something went wrong. Email team@levellup.co and we will add you.';});
 });
 </script>
 </body>
