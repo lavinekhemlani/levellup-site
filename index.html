@@ -679,7 +679,7 @@ window.ACC_GA4_ID = '';          // GA4 > Admin > Data streams > Measurement ID 
     <div class="mega" style="margin-top:32px">
       <a class="tile big rv" href="#syllabus"><span class="ic">🚀</span><h3>AI for Entrepreneurs</h3><p>Go from idea to a working, AI-powered offer in 8 live sessions: fixed scope, fixed price, AI doing the delivery.</p><div class="toolrow"><span>Claude</span><span>ChatGPT</span><span>no-code builders</span></div><p style="margin-top:8px;font-size:13.5px;color:#D6D3CA">About 3 hrs live a week + 2 hrs building your offer</p></a>
       <a class="tile y rv" href="#syllabus" id="automation"><span class="ic">⚙️</span><h3>AI for Automation</h3><p>Kill the busywork in your actual job, step by step.</p><div class="toolrow"><span>n8n</span><span>Zapier</span><span>Make</span><span>Claude Cowork</span></div><p style="margin-top:8px;font-size:13.5px;color:#5C4A0B">About 3 hrs live a week + 1 hr building inside your job</p></a>
-      <a class="tile rv" href="#short"><span class="ic">⚡</span><h3>Short course (HK)</h3><p>AI at Work: four evenings in Central, Hong Kong. HK$3,880.</p></a>
+      <a class="tile rv" href="#short"><span class="ic">⚡</span><h3>Short courses</h3><p>AI Short Course from US$750, AI Mini from US$99. Local currencies at checkout.</p></a>
       <a class="tile rv" href="#trial"><span class="ic">🎟️</span><h3>Free live workshop</h3><p>Watch a real build, live, before you pay a thing.</p></a>
       <a class="tile rv" href="#enterprise"><span class="ic">🏢</span><h3>Private cohorts</h3><p>Run either track just for your team.</p></a>
       <a class="tile rv" href="#instructors"><span class="ic">🤝</span><h3>Practitioner-led</h3><p>Instructors who have built and shipped with AI, including today's agent tooling.</p></a>
@@ -839,7 +839,7 @@ window.ACC_GA4_ID = '';          // GA4 > Admin > Data streams > Measurement ID 
       <div class="cc rv"><span class="rg">🇭🇰 Hong Kong · in person</span><span class="dt">Sat 9 Jan 2027</span><span class="meta">to Tue 2 Feb · Sat mornings in Central + Tue evenings online</span><span class="seats">Both flagship tracks</span><span class="meta">From <b data-price="early">HK$6,999</b></span><button type="button" class="btn btn-k" data-reserve data-region="Hong Kong (in person)">Reserve your seat</button></div>
       <div class="cc rv"><span class="rg">🇺🇸 United States · online</span><span class="dt">Tue 12 Jan 2027</span><span class="meta">to Sat 6 Feb · Tue 7pm + Sat mornings ET</span><span class="seats">Both flagship tracks</span><span class="meta">From <b data-price="early">US$897</b></span><button type="button" class="btn btn-k" data-reserve data-region="United States (remote)">Reserve your seat</button></div>
       <div class="cc rv"><span class="rg">🌏 Southeast Asia · online</span><span class="dt">Tue 12 Jan 2027</span><span class="meta">to Sat 6 Feb · Tue 7pm + Sat mornings SGT</span><span class="seats">Both flagship tracks</span><span class="meta">From <b data-price="early">US$897</b></span><button type="button" class="btn btn-k" data-reserve data-region="Southeast Asia (remote)">Reserve your seat</button></div>
-      <div class="cc sc rv"><span class="rg">🇭🇰 Short course · Central</span><span class="dt">Wed 13 Jan 2027</span><span class="meta">4 Wednesday evenings, 7:00 to 9:30pm, to Wed 3 Feb</span><span class="seats">AI at Work</span><span class="meta"><b>HK$3,880</b></span><button type="button" class="btn btn-y" data-reserve data-track="short">Reserve your seat</button></div>
+      <div class="cc sc rv"><span class="rg">🇭🇰 Short course · Central</span><span class="dt">Wed 13 Jan 2027</span><span class="meta">4 Wednesday evenings, 7:00 to 9:30pm, to Wed 3 Feb</span><span class="seats">AI at Work</span><span class="meta"><b>US$750 · HK$5,880</b></span><button type="button" class="btn btn-y" data-reserve data-track="ai_short">Reserve your seat</button></div>
     </div>
   </div>
 </section>
@@ -924,7 +924,7 @@ window.ACC_GA4_ID = '';          // GA4 > Admin > Data streams > Measurement ID 
       <div class="pc on rv">
         <span class="label-s">SHORT COURSE · 4 EVENINGS · IN PERSON</span>
         <h3 style="font-size:28px">AI at Work</h3>
-        <div class="pr">HK$3,880 <small>/ person</small></div>
+        <div class="pr">US$750 <small>/ person · HK$5,880</small></div>
         <p style="color:var(--muted);font-size:14.5px;margin-top:-6px">4 sessions × 2.5 hours · Wed 13, 20, 27 Jan and 3 Feb 2027, 7:00 to 9:30pm · Central, Hong Kong (venue confirmed on enrolment)</p>
         <ul>
           <li>Session 1: prompting that actually works for your role</li>
@@ -932,9 +932,9 @@ window.ACC_GA4_ID = '';          // GA4 > Admin > Data streams > Measurement ID 
           <li>Session 3: spreadsheets, data and reports with AI</li>
           <li>Session 4: build your first no-code automation</li>
           <li>Certificate of completion</li>
-          <li>HK$3,880 credited if you upgrade to a flagship track within 60 days</li>
+          <li>Fee credited if you upgrade to a flagship track within 60 days</li>
         </ul>
-        <button type="button" class="btn btn-k" data-reserve data-track="short">Reserve your seat</button>
+        <button type="button" class="btn btn-k" data-reserve data-track="ai_short">Reserve your seat</button>
       </div>
       <div class="rv" style="display:flex;flex-direction:column;gap:14px">
         <div class="guarantee" style="background:#fff;margin:0"><span>🏢</span><div><b>Bring your team.</b> Run AI at Work privately for 8 or more colleagues, at your office. <a href="#enterprise">Ask about team rates</a>.</div></div>
@@ -1180,7 +1180,10 @@ Thanks,
       <label class="fld"><span>Course</span><select id="coTrack">
         <option value="entrepreneurs">AI for Entrepreneurs (8 live sessions)</option>
         <option value="automation">AI for Automation (8 live sessions)</option>
-        <option value="short">AI at Work, short course (4 evenings, Hong Kong)</option>
+        <option value="ai_short">AI Short Course (from US$750)</option>
+        <option value="ai_mini">AI Mini (from US$99)</option>
+        <option value="cyber_short">Cyber Short Course (from US$750)</option>
+        <option value="cyber_mini">Cyber Mini (from US$99)</option>
       </select></label>
       <div class="two">
         <label class="fld"><span>Region</span><select id="coRegion"><option>Hong Kong (in person)</option><option>United States (remote)</option><option>Southeast Asia (remote)</option></select></label>
@@ -1235,7 +1238,7 @@ document.documentElement.classList.add('js');
   var WA_MSG = {
     general: "Hi Aka! I have a question about LevelUp's January 2027 AI cohort.",
     trial: "Hi Aka! I'd like a seat at the free LevelUp live workshop. My name is ",
-    short: "Hi Aka! I'm interested in LevelUp's AI at Work short course in Hong Kong (HK$3,880)."
+    short: "Hi Aka! I'm interested in LevelUp's AI Short Course (US$750)."
   };
   $$('[data-wa]').forEach(function(a){
     a.href = 'https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(WA_MSG[a.dataset.wa] || WA_MSG.general);
@@ -1273,56 +1276,114 @@ document.documentElement.classList.add('js');
   // Stripe Payment Links, one per course and currency. Create each in Stripe Dashboard > Payment Links,
   // then paste the https://buy.stripe.com/... URL. Empty = "Pay securely" holds the seat and emails a link.
   var STRIPE_LINKS = {
-    entrepreneurs: {
-      USD: '', // TODO: Stripe Payment Link, AI for Entrepreneurs, US$897
-      USD_plan: '', // TODO: Stripe subscription link, 3 x US$319
-      USD_deposit: '', // TODO: Stripe Payment Link, US$97 deposit
-      HKD_plan: '', HKD_deposit: '',
-      HKD: '', // TODO: Stripe Payment Link, AI for Entrepreneurs, HK$6,999
-      SGD: '', // TODO: Stripe Payment Link, AI for Entrepreneurs, S$1,169
-      AED: '', // TODO: Stripe Payment Link, AI for Entrepreneurs, AED 3,299
-      GBP: '', // TODO: Stripe Payment Link, AI for Entrepreneurs, £689
-      CAD: '', // TODO: Stripe Payment Link, AI for Entrepreneurs, C$1,239
-      PHP: ''  // TODO: Stripe Payment Link, AI for Entrepreneurs, ₱52,499
-    },
-    automation: {
-      USD: '', // TODO: Stripe Payment Link, AI for Automation, US$897
-      USD_plan: '', // TODO: Stripe subscription link, 3 x US$319
-      USD_deposit: '', // TODO: Stripe Payment Link, US$97 deposit
-      HKD_plan: '', HKD_deposit: '',
-      HKD: '', // TODO: Stripe Payment Link, AI for Automation, HK$6,999
-      SGD: '', // TODO: Stripe Payment Link, AI for Automation, S$1,169
-      AED: '', // TODO: Stripe Payment Link, AI for Automation, AED 3,299
-      GBP: '', // TODO: Stripe Payment Link, AI for Automation, £689
-      CAD: '', // TODO: Stripe Payment Link, AI for Automation, C$1,239
-      PHP: ''  // TODO: Stripe Payment Link, AI for Automation, ₱52,499
-    },
-    short: {
-      HKD: ''  // TODO: Stripe Payment Link, AI at Work short course, HK$3,880
-    }
-  };
-  var TRACK_NAME = { entrepreneurs:'AI for Entrepreneurs', automation:'AI for Automation', short:'AI at Work (short course, HK)' };
+  "entrepreneurs": {
+    "USD": "https://buy.stripe.com/7sYaEX8QE8Rh2AVfiwc7u0h",
+    "USD_plan": "https://buy.stripe.com/cNiaEXaYM1oPdfz1rGc7u0i",
+    "USD_deposit": "https://buy.stripe.com/fZu14nd6U9VlgrL3zOc7u0j",
+    "HKD": "https://buy.stripe.com/3cI3cv6IwebBa3n8U8c7u0k",
+    "HKD_plan": "https://buy.stripe.com/cNi4gz4Ao6J9dfzeesc7u0l",
+    "HKD_deposit": "https://buy.stripe.com/6oUcN51oc4B1ejD9Ycc7u0m",
+    "SGD": "https://buy.stripe.com/28E5kD3wkaZpa3n5HWc7u0n",
+    "SGD_plan": "https://buy.stripe.com/eVqfZheaY2sTcbv9Ycc7u0o",
+    "SGD_deposit": "https://buy.stripe.com/28E14ngj63wX4J39Ycc7u0p",
+    "AED": "https://buy.stripe.com/dRm7sL7MA6J9cbv9Ycc7u0q",
+    "AED_plan": "https://buy.stripe.com/bJe6oH2sgd7xgrL0nCc7u0r",
+    "AED_deposit": "https://buy.stripe.com/7sY28r2sgd7x1wR9Ycc7u0s",
+    "GBP": "https://buy.stripe.com/bJe4gzeaYffF0sNb2gc7u0t",
+    "GBP_plan": "https://buy.stripe.com/3cIdR93wkebB0sN8U8c7u0u",
+    "GBP_deposit": "https://buy.stripe.com/9B628reaYd7x8Zj5HWc7u0v",
+    "CAD": "https://buy.stripe.com/3cIbJ1ff2aZpa3neesc7u0w",
+    "CAD_plan": "https://buy.stripe.com/7sYbJ12sg2sTgrL8U8c7u0x",
+    "CAD_deposit": "https://buy.stripe.com/9B6eVd8QE9Vl8Zj3zOc7u0y",
+    "PHP": "https://buy.stripe.com/14A7sL6Iw3wXa3n1rGc7u0z",
+    "PHP_plan": "https://buy.stripe.com/aFa28rgj6c3tdfz7Q4c7u0A",
+    "PHP_deposit": "https://buy.stripe.com/5kQeVd5EsebB2AV9Ycc7u0B"
+  },
+  "automation": {
+    "USD": "https://buy.stripe.com/5kQ6oHaYM1oPdfz4DSc7u0C",
+    "USD_plan": "https://buy.stripe.com/4gM28r2sggjJ4J3fiwc7u0D",
+    "USD_deposit": "https://buy.stripe.com/fZu8wP2sgaZp3EZc6kc7u0E",
+    "HKD": "https://buy.stripe.com/5kQ3cv3wk8Rh3EZ8U8c7u0F",
+    "HKD_plan": "https://buy.stripe.com/bJe7sL3wkaZpejDfiwc7u0G",
+    "HKD_deposit": "https://buy.stripe.com/5kQ5kD6IwaZp6Rbb2gc7u0H",
+    "SGD": "https://buy.stripe.com/fZu00j6Iwc3tcbv3zOc7u0I",
+    "SGD_plan": "https://buy.stripe.com/8x228raYM1oP0sN2vKc7u0J",
+    "SGD_deposit": "https://buy.stripe.com/bJe9ATaYMaZp6Rb3zOc7u0K",
+    "AED": "https://buy.stripe.com/8x29ATff28Rhb7r1rGc7u0L",
+    "AED_plan": "https://buy.stripe.com/5kQ6oH8QE4B1grLb2gc7u0M",
+    "AED_deposit": "https://buy.stripe.com/28E14n6Iw1oP2AV2vKc7u0N",
+    "GBP": "https://buy.stripe.com/aFa00jeaY1oP1wR7Q4c7u0O",
+    "GBP_plan": "https://buy.stripe.com/28E5kDeaY6J91wRc6kc7u0P",
+    "GBP_deposit": "https://buy.stripe.com/eVqcN56Iw9Vl8Zj1rGc7u0Q",
+    "CAD": "https://buy.stripe.com/fZu28r9UIc3ta3n1rGc7u0R",
+    "CAD_plan": "https://buy.stripe.com/00w5kDd6U3wX8Zj6M0c7u0S",
+    "CAD_deposit": "https://buy.stripe.com/28E5kDc2Q5F50sN5HWc7u0T",
+    "PHP": "https://buy.stripe.com/fZu3cv3wk7Nd6Rb2vKc7u0U",
+    "PHP_plan": "https://buy.stripe.com/8x2fZh5Es9Vl4J39Ycc7u0V",
+    "PHP_deposit": "https://buy.stripe.com/eVq3cv8QE9Vl2AV1rGc7u0W"
+  },
+  "ai_mini": {
+    "USD": "https://buy.stripe.com/28EdR97MAffFb7r0nCc7u0Y",
+    "HKD": "https://buy.stripe.com/bJecN5c2Q9VlejD8U8c7u0Z",
+    "SGD": "https://buy.stripe.com/00wdR9aYM9Vlb7r0nCc7u10",
+    "AED": "https://buy.stripe.com/5kQ28rff28Rh0sN9Ycc7u11",
+    "GBP": "https://buy.stripe.com/00w6oH4Ao8RhfnH4DSc7u12",
+    "CAD": "https://buy.stripe.com/7sYbJ11oc2sT3EZ7Q4c7u13",
+    "PHP": "https://buy.stripe.com/9B6aEX3wkaZp6Rb3zOc7u14"
+  },
+  "ai_short": {
+    "USD": "https://buy.stripe.com/bJeaEX9UI4B10sN3zOc7u15",
+    "HKD": "https://buy.stripe.com/bJe3cveaY0kL0sNfiwc7u16",
+    "SGD": "https://buy.stripe.com/8x200jff25F54J35HWc7u17",
+    "AED": "https://buy.stripe.com/dRm9AT6IwaZpcbv1rGc7u18",
+    "GBP": "https://buy.stripe.com/aFabJ10k83wX2AV3zOc7u19",
+    "CAD": "https://buy.stripe.com/eVq8wP4Aod7x7Vf4DSc7u1a",
+    "PHP": "https://buy.stripe.com/bJe28r6Iw3wXb7rdaoc7u1b"
+  },
+  "cyber_mini": {
+    "USD": "https://buy.stripe.com/dRm4gzc2Q1oPa3n2vKc7u1c",
+    "HKD": "https://buy.stripe.com/7sY7sL3wkffF8Zj3zOc7u1d",
+    "SGD": "https://buy.stripe.com/7sYaEX6IwebBfnH0nCc7u1e",
+    "AED": "https://buy.stripe.com/9B600j5Esc3t1wRfiwc7u1f",
+    "GBP": "https://buy.stripe.com/7sY8wP9UI9Vlb7rb2gc7u1g",
+    "CAD": "https://buy.stripe.com/eVqbJ17MA2sTejD3zOc7u1h",
+    "PHP": "https://buy.stripe.com/3cI00j6IwebB3EZ5HWc7u1i"
+  },
+  "cyber_short": {
+    "USD": "https://buy.stripe.com/28E6oH0k85F53EZ8U8c7u1j",
+    "HKD": "https://buy.stripe.com/3cI4gz1oc5F55N7eesc7u1k",
+    "SGD": "https://buy.stripe.com/aFafZhd6U0kLfnHgmAc7u1l",
+    "AED": "https://buy.stripe.com/cNidR95Es2sT0sNgmAc7u1m",
+    "GBP": "https://buy.stripe.com/9B65kD6Iwd7x1wRdaoc7u1n",
+    "CAD": "https://buy.stripe.com/6oU4gz0k83wXb7reesc7u1o",
+    "PHP": "https://buy.stripe.com/6oU4gzgj62sTa3ndaoc7u1p"
+  }
+};
+  STRIPE_LINKS.short = STRIPE_LINKS.ai_short;
+  var TRACK_NAME = { entrepreneurs:'AI for Entrepreneurs', automation:'AI for Automation', short:'AI Short Course', ai_short:'AI Short Course', ai_mini:'AI Mini', cyber_short:'Cyber Short Course', cyber_mini:'Cyber Mini' };
+  var FIXED = { ai_mini:{USD:99,HKD:799,SGD:129,AED:369,GBP:79,CAD:139,PHP:5799}, cyber_mini:{USD:99,HKD:799,SGD:129,AED:369,GBP:79,CAD:139,PHP:5799}, ai_short:{USD:750,HKD:5880,SGD:999,AED:2750,GBP:599,CAD:1049,PHP:43999}, cyber_short:{USD:750,HKD:5880,SGD:999,AED:2750,GBP:599,CAD:1049,PHP:43999} };
+  function isFixed(){ return !!FIXED[coTrack.value]; }
   var mo = $('#mo'), coTrack = $('#coTrack'), coRegion = $('#coRegion'), coCcy = $('#coCcy');
-  function coCurrency(){ return coTrack.value === 'short' ? 'HKD' : coCcy.value; }
+  function coCurrency(){ return coCcy.value; }
   var coPlan = $('#coPlan');
   function coAmount(){
-    if (coTrack.value === 'short') return SHORT_HKD;
+    if (isFixed()) return FIXED[coTrack.value][coCurrency()];
     var full = PRICES.early[coCurrency()];
     if (coPlan.value === 'plan') return Math.ceil(full * 319 / 897);
     if (coPlan.value === 'deposit') return Math.round(full * 97 / 897);
     return full;
   }
   function coUpdate(){
-    var short = coTrack.value === 'short';
-    if (short){ coRegion.value = 'Hong Kong (in person)'; coCcy.value = 'HKD'; }
-    coRegion.disabled = short; coCcy.disabled = short;
+    var fixed = isFixed();
+    coRegion.disabled = false; coCcy.disabled = false;
     var c = coCurrency();
     $('#coAmt').textContent = money(c, coAmount());
-    $('#coPlanWrap').style.display = short ? 'none' : '';
-    if (short) coPlan.value = 'full';
-    $('#coLabel').textContent = short ? 'Short course, 4 evenings' : ({full:'Early-bird price, per track', plan:'Per month, for 3 months', deposit:'Deposit today, holds the early-bird price'})[coPlan.value];
-    $('#coWas').textContent = short ? 'Priced in HKD' : 'Standard ' + money(c, PRICES.standard[c]);
+    $('#coPlanWrap').style.display = fixed ? 'none' : '';
+    if (fixed) coPlan.value = 'full';
+    $('#coLabel').textContent = fixed ? ({ai_mini:'AI Mini, one live session', cyber_mini:'Cyber Mini, one live session', ai_short:'AI Short Course, live', cyber_short:'Cyber Short Course, 12-hour certificate'})[coTrack.value] : ({full:'Early-bird price, per track', plan:'Per month, for 3 months', deposit:'Deposit today, holds the early-bird price'})[coPlan.value];
+    $('#coWas').textContent = fixed ? 'Pay in your local currency' : 'Standard ' + money(c, PRICES.standard[c]);
   }
+
   // The checkout currency follows the region the buyer picks (US -> USD, SEA -> SGD, HK -> HKD)
   // until they choose a currency themselves.
   var REGION_CCY = { 'Hong Kong (in person)':'HKD', 'United States (remote)':'USD', 'Southeast Asia (remote)':'SGD' };
@@ -1330,14 +1391,14 @@ document.documentElement.classList.add('js');
   function ccyForRegion(){ return REGION_CCY[coRegion.value] || ccy; }
   coCcy.addEventListener('change', function(){ coCcyPicked = true; coUpdate(); });
   coRegion.addEventListener('change', function(){ if (!coCcyPicked) coCcy.value = ccyForRegion(); coUpdate(); });
-  coTrack.addEventListener('change', function(){ if (coTrack.value !== 'short' && !coCcyPicked) coCcy.value = ccyForRegion(); coUpdate(); });
+  coTrack.addEventListener('change', function(){ if (!coCcyPicked) coCcy.value = ccyForRegion(); coUpdate(); });
   coPlan.addEventListener('change', coUpdate);
   var lastFocus = null;
   function openMo(opts){
     lastFocus = document.activeElement;
     coCcyPicked = false;
     if (opts.track) coTrack.value = opts.track;
-    else if (coTrack.value === 'short') coTrack.value = 'entrepreneurs';
+    else if (isFixed()) coTrack.value = 'entrepreneurs';
     if (opts.region) coRegion.value = opts.region;
     else coRegion.value = ({ HKD:'Hong Kong (in person)', USD:'United States (remote)', CAD:'United States (remote)', SGD:'Southeast Asia (remote)', PHP:'Southeast Asia (remote)' })[ccy] || coRegion.value;
     // A region button (e.g. "Reserve: US cohort") sets the currency; otherwise keep the one shown on the page.
@@ -1350,6 +1411,7 @@ document.documentElement.classList.add('js');
     setTimeout(function(){ $('#coName').focus(); }, 30);
   }
   function closeMo(){ mo.classList.remove('open'); document.body.style.overflow = ''; if (lastFocus) lastFocus.focus(); }
+  (function(){ var m=(location.hash||'').match(/^#buy-([a-z_]+)$/); if(m && TRACK_NAME[m[1]]) setTimeout(function(){ openMo({track:m[1]}); },400); })();
   $$('[data-reserve]').forEach(function(b){ b.addEventListener('click', function(e){ e.preventDefault(); openMo({ track:b.dataset.track, region:b.dataset.region }); }); });
   mo.addEventListener('click', function(e){ if (e.target === mo || e.target.hasAttribute('data-close')) closeMo(); });
   document.addEventListener('keydown', function(e){ if (e.key === 'Escape' && mo.classList.contains('open')) closeMo(); });
@@ -1359,7 +1421,7 @@ document.documentElement.classList.add('js');
     if (!name || !validEmail(email) || !$('#coOk').checked){ $('#coErr').classList.add('show'); return null; }
     $('#coErr').classList.remove('show');
     var c = coCurrency();
-    return { name:name, email:email, course:TRACK_NAME[coTrack.value], region:coRegion.value, currency:c, amount:money(c, coAmount()), plan:(coTrack.value === 'short' ? 'full' : coPlan.value), mode:mode,
+    return { name:name, email:email, course:TRACK_NAME[coTrack.value], region:coRegion.value, currency:c, amount:money(c, coAmount()), plan:(isFixed() ? 'full' : coPlan.value), mode:mode,
       _subject:'LevelUp seat reservation: ' + TRACK_NAME[coTrack.value] + ' (' + mode + ')' };
   }
   function coDone(msg, bad){
